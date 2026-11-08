@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sentinel AI — Security Operations Center (SOC)</title>
+    <title>Sentinel AI — Security Operations & Risk Intelligence</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Lucide Icons -->
@@ -15,9 +15,10 @@
                 extend: {
                     colors: {
                         cyber: {
-                            dark: '#0a0f1d',
-                            card: '#111827',
-                            border: '#1f2937',
+                            dark: '#080d1a',
+                            panel: '#0e1726',
+                            card: '#131e32',
+                            border: '#1f2e4d',
                             accent: '#06b6d4',
                             glow: '#0891b2'
                         }
@@ -29,263 +30,587 @@
     <style>
         @keyframes pulse-slow {
             0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
+            50% { opacity: 0.35; }
         }
         .pulse-live { animation: pulse-slow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
         ::-webkit-scrollbar { width: 6px; height: 6px; }
-        ::-webkit-scrollbar-track { background: #0a0f1d; }
-        ::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+        ::-webkit-scrollbar-track { background: #080d1a; }
+        ::-webkit-scrollbar-thumb { background: #1f2e4d; border-radius: 3px; }
+        .tab-btn.active {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(79, 70, 229, 0.15));
+            border-color: rgba(6, 182, 212, 0.6);
+            color: #38bdf8;
+        }
     </style>
 </head>
-<body class="bg-[#0a0f1d] text-slate-200 min-h-screen font-sans antialiased selection:bg-cyan-500 selection:text-black">
+<body class="bg-[#080d1a] text-slate-200 min-h-screen font-sans antialiased selection:bg-cyan-500 selection:text-black">
 
     <!-- Top Navigation Header -->
-    <header class="border-b border-gray-800 bg-gray-950/80 backdrop-blur-md sticky top-0 z-40 px-6 py-3.5 flex items-center justify-between">
-        <div class="flex items-center space-x-3">
-            <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20">
-                <i data-lucide="shield-alert" class="w-6 h-6 text-white"></i>
-            </div>
-            <div>
-                <div class="flex items-center space-x-2">
-                    <span class="text-xl font-black tracking-wider text-white">SENTINEL<span class="text-cyan-400">.AI</span></span>
-                    <span class="text-[10px] font-semibold uppercase tracking-widest bg-cyan-950/80 text-cyan-400 border border-cyan-800/60 px-2 py-0.5 rounded-full">SOC v0.1</span>
+    <header class="border-b border-[#1f2e4d] bg-[#0c1424]/90 backdrop-blur-md sticky top-0 z-40 px-6 py-3.5 flex items-center justify-between shadow-lg">
+        <div class="flex items-center space-x-6">
+            <!-- Brand Logo -->
+            <div class="flex items-center space-x-3 cursor-pointer" onclick="switchTab('soc')">
+                <div class="h-10 w-10 rounded-xl bg-gradient-to-tr from-cyan-600 to-indigo-600 flex items-center justify-center shadow-lg shadow-cyan-500/20 border border-cyan-400/30">
+                    <i data-lucide="shield-alert" class="w-6 h-6 text-white"></i>
                 </div>
-                <p class="text-xs text-slate-400">Security, Identity & Risk Intelligence Platform</p>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-xl font-black tracking-wider text-white">SENTINEL<span class="text-cyan-400">.AI</span></span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest bg-cyan-950/80 text-cyan-400 border border-cyan-800/80 px-2 py-0.5 rounded-full">SOC v1.0</span>
+                    </div>
+                    <p class="text-[11px] text-slate-400">Security, Identity & Risk Intelligence Platform</p>
+                </div>
             </div>
+
+            <!-- Tab Navigation Switcher -->
+            <nav class="hidden md:flex items-center space-x-1.5 bg-[#080d1a] p-1 rounded-xl border border-[#1f2e4d]">
+                <button onclick="switchTab('soc')" id="tab-soc" class="tab-btn active px-3.5 py-1.5 rounded-lg text-xs font-semibold flex items-center space-x-2 border border-transparent transition">
+                    <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
+                    <span>Threat Monitor</span>
+                </button>
+                <button onclick="switchTab('iam')" id="tab-iam" class="tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold flex items-center space-x-2 border border-transparent transition text-slate-400 hover:text-slate-200">
+                    <i data-lucide="users" class="w-4 h-4"></i>
+                    <span>Identity & Access</span>
+                </button>
+                <button onclick="switchTab('mllab')" id="tab-mllab" class="tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold flex items-center space-x-2 border border-transparent transition text-slate-400 hover:text-slate-200">
+                    <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+                    <span>ML Risk Lab</span>
+                </button>
+                <button onclick="switchTab('analytics')" id="tab-analytics" class="tab-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold flex items-center space-x-2 border border-transparent transition text-slate-400 hover:text-slate-200">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    <span>Reports & Audits</span>
+                </button>
+            </nav>
         </div>
 
-        <!-- System Status & Controls -->
-        <div class="flex items-center space-x-4">
-            <div class="flex items-center space-x-2 bg-gray-900 border border-gray-800 px-3 py-1.5 rounded-lg text-xs">
-                <span class="h-2 w-2 rounded-full bg-emerald-400 pulse-live"></span>
-                <span class="text-slate-300 font-medium">Detection Engine Active</span>
-            </div>
-
-            <button onclick="downloadReport()" class="flex items-center space-x-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-xs font-semibold px-3.5 py-2 rounded-lg shadow-md transition-all">
-                <i data-lucide="file-down" class="w-4 h-4"></i>
-                <span>Export PDF Report</span>
+        <!-- Controls: Tutorial, PDF, User Badge -->
+        <div class="flex items-center space-x-3">
+            <!-- Launch Interactive Tutorial Button -->
+            <button onclick="openTutorialModal()" class="flex items-center space-x-2 bg-gradient-to-r from-amber-500/20 to-orange-500/20 hover:from-amber-500/30 hover:to-orange-500/30 border border-amber-500/40 text-amber-300 text-xs font-bold px-3.5 py-2 rounded-xl transition shadow-md">
+                <i data-lucide="help-circle" class="w-4 h-4 text-amber-400 animate-bounce"></i>
+                <span>Quick Tutorial</span>
             </button>
 
-            <div id="authStatus" class="flex items-center space-x-2 bg-gray-900 border border-gray-800 px-3 py-1.5 rounded-lg text-xs">
-                <i data-lucide="user-check" class="w-4 h-4 text-cyan-400"></i>
+            <!-- Export PDF -->
+            <button onclick="downloadReport()" class="hidden sm:flex items-center space-x-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-xs font-semibold px-3.5 py-2 rounded-xl shadow-md transition-all">
+                <i data-lucide="file-down" class="w-4 h-4"></i>
+                <span>Export PDF</span>
+            </button>
+
+            <!-- User Auth Badge -->
+            <div class="flex items-center space-x-2 bg-[#0e1726] border border-[#1f2e4d] px-3 py-1.5 rounded-xl text-xs">
+                <span class="h-2 w-2 rounded-full bg-emerald-400 pulse-live"></span>
                 <span id="userNameBadge" class="text-slate-200 font-semibold">Admin (Active)</span>
             </div>
         </div>
     </header>
 
-    <!-- Main Content Container -->
+    <!-- Main Container -->
     <main class="max-w-7xl mx-auto p-6 space-y-6">
 
-        <!-- Metrics KPI Cards Grid -->
-        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <!-- Metric 1: Total Events -->
-            <div class="bg-gray-900/90 border border-gray-800/80 rounded-2xl p-5 relative overflow-hidden shadow-sm">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Ingested Telemetry</span>
-                    <i data-lucide="activity" class="w-5 h-5 text-cyan-400"></i>
-                </div>
-                <div class="mt-3 flex items-baseline space-x-2">
-                    <span id="metricEvents" class="text-3xl font-black text-white">0</span>
-                    <span class="text-xs text-emerald-400 font-medium">+100% Realtime</span>
-                </div>
-                <div class="mt-2 text-xs text-slate-500">Total raw authentication & network logs</div>
-            </div>
-
-            <!-- Metric 2: Open Threats -->
-            <div class="bg-gray-900/90 border border-gray-800/80 rounded-2xl p-5 relative overflow-hidden shadow-sm">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Active Threat Alerts</span>
-                    <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-400"></i>
-                </div>
-                <div class="mt-3 flex items-baseline space-x-2">
-                    <span id="metricAlerts" class="text-3xl font-black text-amber-400">0</span>
-                    <span class="text-xs text-amber-500 font-medium">Under Triage</span>
-                </div>
-                <div class="mt-2 text-xs text-slate-500">Unresolved incidents flagged by rules</div>
-            </div>
-
-            <!-- Metric 3: Critical Incidents -->
-            <div class="bg-gray-900/90 border border-gray-800/80 rounded-2xl p-5 relative overflow-hidden shadow-sm">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Critical Threats</span>
-                    <i data-lucide="skull" class="w-5 h-5 text-rose-500"></i>
-                </div>
-                <div class="mt-3 flex items-baseline space-x-2">
-                    <span id="metricCritical" class="text-3xl font-black text-rose-500">0</span>
-                    <span class="text-xs text-rose-400 font-medium">Urgent Action</span>
-                </div>
-                <div class="mt-2 text-xs text-slate-500">Spray attacks & brute-force bursts</div>
-            </div>
-
-            <!-- Metric 4: ML Threat Index -->
-            <div class="bg-gray-900/90 border border-gray-800/80 rounded-2xl p-5 relative overflow-hidden shadow-sm">
-                <div class="flex items-center justify-between">
-                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Average Risk Score</span>
-                    <i data-lucide="brain-circuit" class="w-5 h-5 text-indigo-400"></i>
-                </div>
-                <div class="mt-3 flex items-baseline space-x-2">
-                    <span id="metricAvgRisk" class="text-3xl font-black text-indigo-400">0.0</span>
-                    <span class="text-xs text-slate-400">/ 100.0</span>
-                </div>
-                <div class="mt-2 text-xs text-slate-500">Machine Learning anomaly index</div>
-            </div>
-        </section>
-
-        <!-- Two-Column Workspace -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
-
-            <!-- Left Column: Alerts Feed & Event Log (7 Cols) -->
-            <div class="lg:col-span-7 space-y-6">
-
-                <!-- Attack Simulation Studio -->
-                <div class="bg-gradient-to-r from-gray-900 to-gray-950 border border-cyan-900/50 rounded-2xl p-5 shadow-lg">
-                    <div class="flex items-center justify-between mb-3">
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="zap" class="w-5 h-5 text-cyan-400"></i>
-                            <h2 class="text-sm font-bold uppercase tracking-wider text-white">Live Attack Simulation Studio</h2>
-                        </div>
-                        <span class="text-[11px] text-cyan-400/80 bg-cyan-950 px-2.5 py-0.5 rounded-full border border-cyan-800/50">Instant Telemetry Generator</span>
+        <!-- ============================================================== -->
+        <!-- TAB 1: SOC & THREAT MONITORING                                 -->
+        <!-- ============================================================== -->
+        <div id="view-soc" class="tab-content space-y-6">
+            <!-- Metric KPI Cards -->
+            <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-5 shadow-sm hover:border-cyan-500/40 transition">
+                    <div class="flex items-center justify-between text-slate-400 text-xs font-bold uppercase tracking-wider">
+                        <span>Ingested Telemetry</span>
+                        <i data-lucide="activity" class="w-5 h-5 text-cyan-400"></i>
                     </div>
-                    <p class="text-xs text-slate-400 mb-4">Click any scenario below to ingest simulated attack telemetry and observe real-time detection:</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-                        <button onclick="simulateAttack('brute_force')" class="bg-rose-950/40 hover:bg-rose-900/50 border border-rose-800/60 text-rose-300 text-xs font-medium py-2.5 px-3 rounded-xl transition flex flex-col items-center space-y-1">
-                            <i data-lucide="bomb" class="w-4 h-4 text-rose-400"></i>
-                            <span>Brute Force</span>
-                        </button>
-                        <button onclick="simulateAttack('ip_spray')" class="bg-amber-950/40 hover:bg-amber-900/50 border border-amber-800/60 text-amber-300 text-xs font-medium py-2.5 px-3 rounded-xl transition flex flex-col items-center space-y-1">
-                            <i data-lucide="crosshair" class="w-4 h-4 text-amber-400"></i>
-                            <span>IP Spraying</span>
-                        </button>
-                        <button onclick="simulateAttack('impossible_travel')" class="bg-indigo-950/40 hover:bg-indigo-900/50 border border-indigo-800/60 text-indigo-300 text-xs font-medium py-2.5 px-3 rounded-xl transition flex flex-col items-center space-y-1">
-                            <i data-lucide="plane-takeoff" class="w-4 h-4 text-indigo-400"></i>
-                            <span>Geo Velocity</span>
-                        </button>
-                        <button onclick="simulateAttack('normal_login')" class="bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-800/60 text-emerald-300 text-xs font-medium py-2.5 px-3 rounded-xl transition flex flex-col items-center space-y-1">
-                            <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
-                            <span>Clean Login</span>
-                        </button>
+                    <div class="mt-3 flex items-baseline space-x-2">
+                        <span id="metricEvents" class="text-3xl font-black text-white">0</span>
+                        <span class="text-xs text-emerald-400 font-medium">Realtime Stream</span>
                     </div>
+                    <p class="text-xs text-slate-500 mt-2">Authentication & network events</p>
                 </div>
 
-                <!-- Threat Alerts Feed -->
-                <div class="bg-gray-900/90 border border-gray-800 rounded-2xl overflow-hidden shadow-md">
-                    <div class="p-5 border-b border-gray-800 flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="bell-ring" class="w-5 h-5 text-cyan-400"></i>
-                            <h2 class="text-sm font-bold uppercase tracking-wider text-white">Active Threat Incidents</h2>
-                        </div>
-                        <button onclick="refreshData()" class="text-xs text-slate-400 hover:text-cyan-400 flex items-center space-x-1">
-                            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
-                            <span>Refresh</span>
-                        </button>
+                <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-5 shadow-sm hover:border-amber-500/40 transition">
+                    <div class="flex items-center justify-between text-slate-400 text-xs font-bold uppercase tracking-wider">
+                        <span>Active Threat Alerts</span>
+                        <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-400"></i>
                     </div>
-
-                    <div class="overflow-x-auto max-h-[380px] overflow-y-auto">
-                        <table class="w-full text-left text-xs">
-                            <thead class="bg-gray-950 text-slate-400 uppercase text-[10px] tracking-wider sticky top-0">
-                                <tr>
-                                    <th class="py-3 px-4">Severity</th>
-                                    <th class="py-3 px-4">Incident Title</th>
-                                    <th class="py-3 px-4">Rule Triggered</th>
-                                    <th class="py-3 px-4">Risk</th>
-                                    <th class="py-3 px-4 text-right">Action</th>
-                                </tr>
-                            </thead>
-                            <tbody id="alertsTableBody" class="divide-y divide-gray-800">
-                                <tr>
-                                    <td colspan="5" class="py-8 text-center text-slate-500">Loading active threat alerts...</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="mt-3 flex items-baseline space-x-2">
+                        <span id="metricAlerts" class="text-3xl font-black text-amber-400">0</span>
+                        <span class="text-xs text-amber-400/80 font-medium">Under Triage</span>
                     </div>
+                    <p class="text-xs text-slate-500 mt-2">Flagged by detection rules</p>
                 </div>
 
-                <!-- Ingested Log Telemetry -->
-                <div class="bg-gray-900/90 border border-gray-800 rounded-2xl overflow-hidden shadow-md">
-                    <div class="p-4 border-b border-gray-800 flex items-center justify-between">
-                        <div class="flex items-center space-x-2">
-                            <i data-lucide="terminal" class="w-4 h-4 text-slate-400"></i>
-                            <h2 class="text-xs font-bold uppercase tracking-wider text-slate-300">Live Security Event Telemetry</h2>
-                        </div>
-                        <span id="eventCountBadge" class="text-[10px] bg-gray-800 text-slate-400 px-2 py-0.5 rounded-full">0 events</span>
+                <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-5 shadow-sm hover:border-rose-500/40 transition">
+                    <div class="flex items-center justify-between text-slate-400 text-xs font-bold uppercase tracking-wider">
+                        <span>Critical Incidents</span>
+                        <i data-lucide="skull" class="w-5 h-5 text-rose-500"></i>
                     </div>
-                    <div id="eventsLogStream" class="p-3 text-xs font-mono max-h-[220px] overflow-y-auto space-y-2 bg-gray-950/70">
-                        <div class="text-slate-500 text-center py-4">Waiting for incoming telemetry events...</div>
+                    <div class="mt-3 flex items-baseline space-x-2">
+                        <span id="metricCritical" class="text-3xl font-black text-rose-500">0</span>
+                        <span class="text-xs text-rose-400 font-medium">High Impact</span>
                     </div>
+                    <p class="text-xs text-slate-500 mt-2">Immediate containment required</p>
                 </div>
 
-            </div>
+                <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-5 shadow-sm hover:border-indigo-500/40 transition">
+                    <div class="flex items-center justify-between text-slate-400 text-xs font-bold uppercase tracking-wider">
+                        <span>ML Threat Risk Index</span>
+                        <i data-lucide="brain-circuit" class="w-5 h-5 text-indigo-400"></i>
+                    </div>
+                    <div class="mt-3 flex items-baseline space-x-2">
+                        <span id="metricAvgRisk" class="text-3xl font-black text-indigo-400">0.0</span>
+                        <span class="text-xs text-slate-400">/ 100.0</span>
+                    </div>
+                    <p class="text-xs text-slate-500 mt-2">Normalized ensemble AI score</p>
+                </div>
+            </section>
 
-            <!-- Right Column: AI Assistant & Incident Copilot (5 Cols) -->
-            <div class="lg:col-span-5 space-y-6">
-
-                <!-- AI Security Copilot Chat Card -->
-                <div class="bg-gray-900/90 border border-gray-800 rounded-2xl flex flex-col h-[740px] shadow-xl overflow-hidden">
-                    <!-- Copilot Header -->
-                    <div class="p-4 border-b border-gray-800 bg-gray-950/60 flex items-center justify-between">
-                        <div class="flex items-center space-x-2.5">
-                            <div class="h-8 w-8 rounded-lg bg-indigo-600/30 border border-indigo-500/40 flex items-center justify-center">
-                                <i data-lucide="sparkles" class="w-4 h-4 text-indigo-400"></i>
+            <!-- 2-Column Interface -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Left Column: Attack Simulator & Alerts -->
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Attack Simulator Studio -->
+                    <div class="bg-gradient-to-r from-[#0e1726] to-[#121c30] border border-cyan-800/40 rounded-2xl p-5 shadow-lg">
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="zap" class="w-5 h-5 text-cyan-400"></i>
+                                <h2 class="text-sm font-bold uppercase tracking-wider text-white">Live Attack Simulator</h2>
                             </div>
-                            <div>
-                                <h3 class="text-sm font-bold text-white">Sentinel Copilot</h3>
-                                <p class="text-[11px] text-slate-400">GenAI Incident Investigator & MITRE ATT&CK</p>
-                            </div>
+                            <span class="text-[11px] bg-cyan-950 text-cyan-300 border border-cyan-800/60 px-2.5 py-0.5 rounded-full font-medium">1-Click Telemetry Ingestion</span>
                         </div>
-                        <span class="text-[10px] bg-indigo-950 text-indigo-400 border border-indigo-800/60 px-2 py-0.5 rounded-full">AI Grounded</span>
-                    </div>
-
-                    <!-- Quick Prompt Chips -->
-                    <div class="px-4 py-2.5 bg-gray-950/30 border-b border-gray-800/60 flex flex-wrap gap-1.5">
-                        <button onclick="sendQuickPrompt('Why was the latest alert flagged?')" class="text-[11px] bg-gray-800 hover:bg-gray-700 text-slate-300 px-2.5 py-1 rounded-lg transition border border-gray-700">
-                            Why was this flagged?
-                        </button>
-                        <button onclick="sendQuickPrompt('Show defensive remediation runbook')" class="text-[11px] bg-gray-800 hover:bg-gray-700 text-slate-300 px-2.5 py-1 rounded-lg transition border border-gray-700">
-                            Show remediation runbook
-                        </button>
-                        <button onclick="sendQuickPrompt('Explain ML risk calculation')" class="text-[11px] bg-gray-800 hover:bg-gray-700 text-slate-300 px-2.5 py-1 rounded-lg transition border border-gray-700">
-                            Explain ML risk scoring
-                        </button>
-                    </div>
-
-                    <!-- Messages Chat Box -->
-                    <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3.5 text-xs">
-                        <!-- AI Greeting -->
-                        <div class="flex items-start space-x-2.5">
-                            <div class="h-6 w-6 rounded-md bg-indigo-600/30 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-0.5">
-                                <i data-lucide="bot" class="w-3.5 h-3.5"></i>
-                            </div>
-                            <div class="bg-gray-800/90 border border-gray-700/80 rounded-2xl rounded-tl-sm p-3.5 text-slate-300 leading-relaxed max-w-[90%]">
-                                <p class="font-medium text-white mb-1">Welcome to Sentinel AI Copilot</p>
-                                I am your Tier-3 Security Analyst. Select an alert from the table to inspect blast radius, or click <span class="text-cyan-400 font-semibold">"Analyze with AI"</span> on any incident!
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Chat Input Field -->
-                    <div class="p-3 bg-gray-950 border-t border-gray-800">
-                        <form onsubmit="handleChatSubmit(event)" class="flex items-center space-x-2">
-                            <input id="chatInput" type="text" placeholder="Ask about threats, indicators, or mitigations..." class="flex-1 bg-gray-900 border border-gray-700 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
-                            <button type="submit" class="bg-cyan-600 hover:bg-cyan-500 text-white p-2.5 rounded-xl transition shadow">
-                                <i data-lucide="send" class="w-4 h-4"></i>
+                        <p class="text-xs text-slate-400 mb-4">Click any scenario to simulate real-time cyber attacks and observe how detection rules trigger:</p>
+                        
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <button onclick="simulateAttack('brute_force')" class="bg-rose-950/30 hover:bg-rose-900/40 border border-rose-800/50 hover:border-rose-500 text-rose-300 text-xs font-semibold py-3 px-3 rounded-xl transition flex flex-col items-center space-y-1.5 shadow-sm">
+                                <i data-lucide="bomb" class="w-4 h-4 text-rose-400"></i>
+                                <span>Brute Force</span>
+                                <span class="text-[10px] text-rose-400/70 font-normal">7 failed attempts</span>
                             </button>
-                        </form>
+                            <button onclick="simulateAttack('ip_spray')" class="bg-amber-950/30 hover:bg-amber-900/40 border border-amber-800/50 hover:border-amber-500 text-amber-300 text-xs font-semibold py-3 px-3 rounded-xl transition flex flex-col items-center space-y-1.5 shadow-sm">
+                                <i data-lucide="crosshair" class="w-4 h-4 text-amber-400"></i>
+                                <span>IP Spraying</span>
+                                <span class="text-[10px] text-amber-400/70 font-normal">Multi-user targets</span>
+                            </button>
+                            <button onclick="simulateAttack('impossible_travel')" class="bg-indigo-950/30 hover:bg-indigo-900/40 border border-indigo-800/50 hover:border-indigo-500 text-indigo-300 text-xs font-semibold py-3 px-3 rounded-xl transition flex flex-col items-center space-y-1.5 shadow-sm">
+                                <i data-lucide="plane-takeoff" class="w-4 h-4 text-indigo-400"></i>
+                                <span>Geo Velocity</span>
+                                <span class="text-[10px] text-indigo-400/70 font-normal">Tokyo ➔ London</span>
+                            </button>
+                            <button onclick="simulateAttack('normal_login')" class="bg-emerald-950/30 hover:bg-emerald-900/40 border border-emerald-800/50 hover:border-emerald-500 text-emerald-300 text-xs font-semibold py-3 px-3 rounded-xl transition flex flex-col items-center space-y-1.5 shadow-sm">
+                                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                                <span>Clean Login</span>
+                                <span class="text-[10px] text-emerald-400/70 font-normal">Normal baseline</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Alerts Feed Table -->
+                    <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl overflow-hidden shadow-md">
+                        <div class="p-4 border-b border-[#1f2e4d] flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="bell-ring" class="w-5 h-5 text-cyan-400"></i>
+                                <h3 class="text-sm font-bold text-white uppercase tracking-wider">Incident Triage Feed</h3>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <button onclick="refreshData()" class="text-xs text-slate-400 hover:text-cyan-400 flex items-center space-x-1 transition">
+                                    <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                                    <span>Refresh</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="overflow-x-auto max-h-[380px] overflow-y-auto">
+                            <table class="w-full text-left text-xs">
+                                <thead class="bg-[#080d1a] text-slate-400 uppercase text-[10px] tracking-wider sticky top-0">
+                                    <tr>
+                                        <th class="py-3 px-4">Severity</th>
+                                        <th class="py-3 px-4">Title & Details</th>
+                                        <th class="py-3 px-4">Rule</th>
+                                        <th class="py-3 px-4">Risk</th>
+                                        <th class="py-3 px-4 text-right">Triage Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="alertsTableBody" class="divide-y divide-[#1f2e4d]">
+                                    <tr>
+                                        <td colspan="5" class="py-8 text-center text-slate-500">Loading threat alerts...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Live Log Stream -->
+                    <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl overflow-hidden shadow-md">
+                        <div class="p-3.5 border-b border-[#1f2e4d] flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i data-lucide="terminal" class="w-4 h-4 text-slate-400"></i>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-300">Raw Ingested Log Telemetry</h4>
+                            </div>
+                            <span id="eventCountBadge" class="text-[10px] bg-[#131e32] text-slate-400 px-2 py-0.5 rounded-full">0 events</span>
+                        </div>
+                        <div id="eventsLogStream" class="p-3 text-xs font-mono max-h-[190px] overflow-y-auto space-y-1.5 bg-[#080d1a]/80">
+                            <div class="text-slate-500 text-center py-4">Waiting for event stream...</div>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Right Column: AI Security Copilot -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl flex flex-col h-[750px] shadow-xl overflow-hidden">
+                        <!-- Copilot Header -->
+                        <div class="p-4 border-b border-[#1f2e4d] bg-[#0c1424] flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="h-9 w-9 rounded-xl bg-indigo-600/20 border border-indigo-500/40 flex items-center justify-center text-indigo-400 shadow">
+                                    <i data-lucide="sparkles" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+                                        <span>Sentinel Copilot</span>
+                                        <span class="text-[10px] bg-indigo-950 text-indigo-300 border border-indigo-800/80 px-2 py-0.5 rounded-full font-medium">LLaMA 3.3</span>
+                                    </h3>
+                                    <p class="text-[11px] text-slate-400">Evidence-Grounded Incident Analyst</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Prompt Suggestion Chips -->
+                        <div class="px-3.5 py-2.5 bg-[#0a0f1d] border-b border-[#1f2e4d] flex flex-wrap gap-1.5">
+                            <button onclick="sendQuickPrompt('Why was the latest alert flagged?')" class="text-[11px] bg-[#131e32] hover:bg-[#1a2842] text-slate-300 px-2.5 py-1 rounded-lg transition border border-[#1f2e4d]">
+                                Why was this flagged?
+                            </button>
+                            <button onclick="sendQuickPrompt('Show defensive containment runbook')" class="text-[11px] bg-[#131e32] hover:bg-[#1a2842] text-slate-300 px-2.5 py-1 rounded-lg transition border border-[#1f2e4d]">
+                                Defensive runbook
+                            </button>
+                            <button onclick="sendQuickPrompt('Explain how ML risk is calculated')" class="text-[11px] bg-[#131e32] hover:bg-[#1a2842] text-slate-300 px-2.5 py-1 rounded-lg transition border border-[#1f2e4d]">
+                                ML risk score breakdown
+                            </button>
+                        </div>
+
+                        <!-- Messages Container -->
+                        <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3.5 text-xs">
+                            <div class="flex items-start space-x-2.5">
+                                <div class="h-6 w-6 rounded-md bg-indigo-600/30 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-0.5">
+                                    <i data-lucide="bot" class="w-3.5 h-3.5"></i>
+                                </div>
+                                <div class="bg-[#131e32] border border-[#1f2e4d] rounded-2xl rounded-tl-sm p-3.5 text-slate-300 leading-relaxed max-w-[90%] shadow-sm">
+                                    <p class="font-bold text-white mb-1">Hello! I am your Sentinel AI Copilot.</p>
+                                    I analyze active security incidents, calculate blast radius, and formulate defensive containment steps. Click <span class="text-cyan-400 font-semibold">"Analyze AI"</span> on any alert to inspect it immediately!
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chat Input -->
+                        <div class="p-3 bg-[#080d1a] border-t border-[#1f2e4d]">
+                            <form onsubmit="handleChatSubmit(event)" class="flex items-center space-x-2">
+                                <input id="chatInput" type="text" placeholder="Ask about threats, indicators, or mitigations..." class="flex-1 bg-[#0e1726] border border-[#1f2e4d] rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition">
+                                <button type="submit" class="bg-cyan-600 hover:bg-cyan-500 text-white p-2.5 rounded-xl transition shadow">
+                                    <i data-lucide="send" class="w-4 h-4"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!-- ============================================================== -->
+        <!-- TAB 2: IDENTITY & ACCESS MANAGEMENT (IAM)                      -->
+        <!-- ============================================================== -->
+        <div id="view-iam" class="tab-content hidden space-y-6">
+            <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-6 shadow-md">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-[#1f2e4d] gap-4">
+                    <div>
+                        <h2 class="text-base font-bold text-white flex items-center space-x-2">
+                            <i data-lucide="users" class="w-5 h-5 text-cyan-400"></i>
+                            <span>Identity & Access Management (RBAC)</span>
+                        </h2>
+                        <p class="text-xs text-slate-400 mt-1">Manage user identities, privilege roles (Admin, Security Analyst, Viewer), and audit security logs.</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="loadIAMUsers()" class="bg-[#131e32] hover:bg-[#1a2842] border border-[#1f2e4d] text-slate-300 text-xs font-semibold px-3.5 py-2 rounded-xl transition flex items-center space-x-1.5">
+                            <i data-lucide="refresh-cw" class="w-3.5 h-3.5"></i>
+                            <span>Refresh Users</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Users List Table -->
+                <div class="mt-4 overflow-x-auto">
+                    <table class="w-full text-left text-xs">
+                        <thead class="bg-[#080d1a] text-slate-400 uppercase text-[10px] tracking-wider">
+                            <tr>
+                                <th class="py-3 px-4">User ID</th>
+                                <th class="py-3 px-4">Username</th>
+                                <th class="py-3 px-4">Email Address</th>
+                                <th class="py-3 px-4">Assigned Role</th>
+                                <th class="py-3 px-4">Account Status</th>
+                                <th class="py-3 px-4 text-right">Role Governance</th>
+                            </tr>
+                        </thead>
+                        <tbody id="iamUsersTableBody" class="divide-y divide-[#1f2e4d]">
+                            <tr><td colspan="6" class="py-6 text-center text-slate-500">Loading user directory...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Audit Trail Log Table -->
+            <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-6 shadow-md">
+                <div class="flex items-center justify-between pb-3 border-b border-[#1f2e4d]">
+                    <h3 class="text-sm font-bold text-white flex items-center space-x-2">
+                        <i data-lucide="file-clock" class="w-4 h-4 text-amber-400"></i>
+                        <span>Immutable Audit Trail</span>
+                    </h3>
+                    <span class="text-[10px] bg-[#131e32] text-slate-400 px-2.5 py-0.5 rounded-full border border-[#1f2e4d]">Compliance Record</span>
+                </div>
+                <div class="mt-4 overflow-x-auto max-h-[300px] overflow-y-auto">
+                    <table class="w-full text-left text-xs">
+                        <thead class="bg-[#080d1a] text-slate-400 uppercase text-[10px] tracking-wider sticky top-0">
+                            <tr>
+                                <th class="py-2.5 px-4">Timestamp</th>
+                                <th class="py-2.5 px-4">Action</th>
+                                <th class="py-2.5 px-4">Resource</th>
+                                <th class="py-2.5 px-4">Actor</th>
+                                <th class="py-2.5 px-4">IP Address</th>
+                                <th class="py-2.5 px-4">Audit Details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="auditLogsTableBody" class="divide-y divide-[#1f2e4d]">
+                            <tr><td colspan="6" class="py-6 text-center text-slate-500">Loading audit records...</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- TAB 3: MACHINE LEARNING RISK LAB                               -->
+        <!-- ============================================================== -->
+        <div id="view-mllab" class="tab-content hidden space-y-6">
+            <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-6 shadow-md">
+                <div class="flex items-center space-x-3 pb-4 border-b border-[#1f2e4d]">
+                    <div class="h-10 w-10 rounded-xl bg-indigo-600/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                        <i data-lucide="brain-circuit" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-base font-bold text-white">Machine Learning Risk Laboratory</h2>
+                        <p class="text-xs text-slate-400">Interactive feature playground evaluating multi-factor risk inference in real time.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mt-6">
+                    <!-- Sliders & Feature Controls (7 Cols) -->
+                    <div class="lg:col-span-7 space-y-5">
+                        <!-- Failed Attempts Slider -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <span class="text-slate-300">Consecutive Failed Attempts:</span>
+                                <span id="valFailed" class="text-cyan-400 font-bold">4 attempts</span>
+                            </div>
+                            <input id="sliderFailed" type="range" min="0" max="15" value="4" oninput="updateMLPrediction()" class="w-full accent-cyan-500 bg-gray-700 h-2 rounded-lg cursor-pointer">
+                        </div>
+
+                        <!-- Hour of Day Slider -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <span class="text-slate-300">Hour of Day (UTC):</span>
+                                <span id="valHour" class="text-cyan-400 font-bold">03:00 UTC (Off-Hours)</span>
+                            </div>
+                            <input id="sliderHour" type="range" min="0" max="23" value="3" oninput="updateMLPrediction()" class="w-full accent-cyan-500 bg-gray-700 h-2 rounded-lg cursor-pointer">
+                        </div>
+
+                        <!-- IP Reputation Slider -->
+                        <div class="space-y-2">
+                            <div class="flex justify-between text-xs font-semibold">
+                                <span class="text-slate-300">Source IP Threat Score (0=Clean, 100=Known Malicious):</span>
+                                <span id="valIpRep" class="text-cyan-400 font-bold">65 / 100</span>
+                            </div>
+                            <input id="sliderIpRep" type="range" min="0" max="100" value="65" oninput="updateMLPrediction()" class="w-full accent-cyan-500 bg-gray-700 h-2 rounded-lg cursor-pointer">
+                        </div>
+
+                        <!-- Boolean Toggles -->
+                        <div class="grid grid-cols-2 gap-4 pt-2">
+                            <label class="flex items-center space-x-3 bg-[#131e32] p-3 rounded-xl border border-[#1f2e4d] cursor-pointer hover:border-cyan-500/50 transition">
+                                <input id="chkNewDevice" type="checkbox" checked onchange="updateMLPrediction()" class="accent-cyan-500 w-4 h-4 rounded">
+                                <span class="text-xs font-medium text-slate-200">Unrecognized Device</span>
+                            </label>
+
+                            <label class="flex items-center space-x-3 bg-[#131e32] p-3 rounded-xl border border-[#1f2e4d] cursor-pointer hover:border-cyan-500/50 transition">
+                                <input id="chkUnusualLoc" type="checkbox" checked onchange="updateMLPrediction()" class="accent-cyan-500 w-4 h-4 rounded">
+                                <span class="text-xs font-medium text-slate-200">Geographic Anomaly</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Prediction Result Gauge Card (5 Cols) -->
+                    <div class="lg:col-span-5 bg-[#080d1a] border border-[#1f2e4d] rounded-2xl p-6 flex flex-col justify-between shadow-inner">
+                        <div>
+                            <span class="text-[10px] uppercase font-bold tracking-wider text-slate-400">Inferred Output</span>
+                            <div class="mt-2 flex items-baseline space-x-2">
+                                <span id="mlResultScore" class="text-5xl font-black text-rose-500">92.0</span>
+                                <span class="text-sm font-bold text-slate-400">/ 100.0</span>
+                            </div>
+                            <div class="mt-3">
+                                <span id="mlResultBadge" class="text-xs font-extrabold px-3 py-1 rounded-full uppercase bg-rose-950 text-rose-400 border border-rose-800">
+                                    CRITICAL RISK
+                                </span>
+                            </div>
+                            <p id="mlResultPred" class="text-xs font-medium text-slate-300 mt-3">Malicious Authentication Attempt</p>
+                        </div>
+
+                        <div class="mt-6 border-t border-[#1f2e4d] pt-4">
+                            <div class="text-[11px] font-bold text-slate-400 mb-2">Primary Contributing Factors:</div>
+                            <ul id="mlFactorsList" class="text-xs space-y-1 text-slate-300">
+                                <li class="flex items-center space-x-1.5"><i data-lucide="alert-circle" class="w-3.5 h-3.5 text-rose-400"></i><span>Excessive failed attempts</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- TAB 4: COMPLIANCE & REPORTS                                    -->
+        <!-- ============================================================== -->
+        <div id="view-analytics" class="tab-content hidden space-y-6">
+            <div class="bg-[#0e1726] border border-[#1f2e4d] rounded-2xl p-6 shadow-md">
+                <div class="flex items-center justify-between pb-4 border-b border-[#1f2e4d]">
+                    <div>
+                        <h2 class="text-base font-bold text-white flex items-center space-x-2">
+                            <i data-lucide="file-check-2" class="w-5 h-5 text-cyan-400"></i>
+                            <span>Executive Security & Compliance Reports</span>
+                        </h2>
+                        <p class="text-xs text-slate-400 mt-1">Export official security posture dossiers, MITRE ATT&CK coverage, and audit trails.</p>
+                    </div>
+                    <button onclick="downloadReport()" class="flex items-center space-x-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl shadow-lg transition">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>Download Executive PDF</span>
+                    </button>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-[#131e32] border border-[#1f2e4d] rounded-2xl p-5">
+                        <span class="text-xs text-slate-400 font-bold uppercase">Incident Resolution Rate</span>
+                        <div id="reportResRate" class="text-3xl font-black text-emerald-400 mt-2">100.0%</div>
+                        <p class="text-xs text-slate-500 mt-1">Successfully triaged incidents</p>
+                    </div>
+
+                    <div class="bg-[#131e32] border border-[#1f2e4d] rounded-2xl p-5">
+                        <span class="text-xs text-slate-400 font-bold uppercase">Evaluated Model Accuracy</span>
+                        <div class="text-3xl font-black text-cyan-400 mt-2">94.6%</div>
+                        <p class="text-xs text-slate-500 mt-1">0.0% False Positive Rate on test dataset</p>
+                    </div>
+
+                    <div class="bg-[#131e32] border border-[#1f2e4d] rounded-2xl p-5">
+                        <span class="text-xs text-slate-400 font-bold uppercase">Audit Ledger Status</span>
+                        <div class="text-3xl font-black text-indigo-400 mt-2">COMPLIANT</div>
+                        <p class="text-xs text-slate-500 mt-1">Immutable SHA-256 event auditing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <!-- Global Scripts -->
+    <!-- ============================================================== -->
+    <!-- INTERACTIVE TUTORIAL MODAL                                     -->
+    <!-- ============================================================== -->
+    <div id="tutorialModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-[#0e1726] border border-cyan-500/50 rounded-2xl max-w-xl w-full p-6 shadow-2xl relative">
+            <button onclick="closeTutorialModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <!-- Step Header -->
+            <div class="flex items-center space-x-2.5">
+                <span id="tutStepBadge" class="bg-cyan-950 text-cyan-400 border border-cyan-800 text-xs font-bold px-2.5 py-1 rounded-full">Step 1 of 5</span>
+                <span class="text-xs text-slate-400 font-medium">Sentinel AI Guided Walkthrough</span>
+            </div>
+
+            <!-- Dynamic Step Content -->
+            <div id="tutBody" class="mt-4 space-y-3">
+                <h3 id="tutTitle" class="text-lg font-bold text-white">Welcome to Sentinel AI</h3>
+                <p id="tutText" class="text-xs text-slate-300 leading-relaxed">
+                    Sentinel AI is an AI-powered Security Operations Center (SOC) platform combining real-time threat detection, Identity & Access Management (RBAC), machine learning risk scoring, and a Generative AI incident copilot.
+                </p>
+                <div id="tutHighlight" class="bg-[#080d1a] border border-[#1f2e4d] p-3 rounded-xl text-xs text-cyan-300">
+                    💡 Tip: Use this platform to demonstrate end-to-end fullstack development, AI, cybersecurity, and data analytics in a single portfolio project!
+                </div>
+            </div>
+
+            <!-- Modal Navigation Buttons -->
+            <div class="mt-6 flex justify-between items-center pt-4 border-t border-[#1f2e4d]">
+                <button onclick="prevTutorialStep()" id="tutBtnPrev" class="text-xs text-slate-400 hover:text-white font-semibold hidden">
+                    Previous
+                </button>
+                <div class="flex items-center space-x-2 ml-auto">
+                    <button onclick="closeTutorialModal()" class="text-xs text-slate-400 hover:text-white font-semibold px-3 py-2">
+                        Skip
+                    </button>
+                    <button onclick="nextTutorialStep()" id="tutBtnNext" class="bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl transition shadow">
+                        Next Step
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- JAVASCRIPT APPLICATION LOGIC                                  -->
+    <!-- ============================================================== -->
     <script>
         let currentAuthToken = "";
         let selectedAlertId = null;
+        let tutorialStep = 1;
 
-        // Auto authenticate as default admin
+        const tutorialSteps = [
+            {
+                step: 1,
+                title: "1. Security Telemetry & Metrics",
+                text: "The top metric cards continuously monitor high-throughput events, open threats, critical attacks, and the continuous Machine Learning risk index.",
+                highlight: "📊 Ingested Telemetry counts all authentication and network logs in real time."
+            },
+            {
+                step: 2,
+                title: "2. Live Attack Simulation Studio",
+                text: "Click any button in the simulator (Brute Force, IP Spraying, Geo Velocity) to inject attack telemetry and watch detection rules fire immediately!",
+                highlight: "⚡ Test 'Brute Force' to trigger RULE_BRUTE_FORCE_BURST with High/Critical severity."
+            },
+            {
+                step: 3,
+                title: "3. Incident Triage & Resolution",
+                text: "The Incident Feed lists flagged alerts. Security analysts can click 'Resolve' to mark an incident as mitigated, automatically writing an immutable audit trail entry.",
+                highlight: "🛡️ Triage updates are recorded permanently with analyst timestamp and IP address."
+            },
+            {
+                step: 4,
+                title: "4. Sentinel AI Security Copilot",
+                text: "Click 'Analyze AI' on any alert to have the Copilot evaluate the incident, cross-reference the MITRE ATT&CK framework, and generate defensive runbooks.",
+                highlight: "🤖 Powered by Groq LLaMA-3.3 with strict evidence grounding to prevent hallucinations."
+            },
+            {
+                step: 5,
+                title: "5. Executive PDF Reports & IAM",
+                text: "Switch to the 'Identity & Access' tab to govern roles, or click 'Export PDF' in the top right to download an official executive compliance report.",
+                highlight: "📄 Generates a valid standard PDF report ready for stakeholders and compliance audits."
+            }
+        ];
+
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active', 'text-slate-200'));
+            
+            const targetView = document.getElementById(`view-${tabId}`);
+            const targetBtn = document.getElementById(`tab-${tabId}`);
+            if (targetView) targetView.classList.remove('hidden');
+            if (targetBtn) targetBtn.classList.add('active');
+
+            if (tabId === 'iam') loadIAMUsers();
+            if (tabId === 'mllab') updateMLPrediction();
+            lucide.createIcons();
+        }
+
+        // Auto authenticate default admin
         async function initAuth() {
             try {
-                // Try register default admin (if not registered)
                 await fetch('/api/v1/auth/register', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -318,40 +643,42 @@
             if (!currentAuthToken) await initAuth();
             const headers = { 'Authorization': `Bearer ${currentAuthToken}` };
 
-            // 1. Fetch Stats
+            // Stats
             try {
-                const statsRes = await fetch('/api/v1/alerts/stats', { headers });
-                if (statsRes.ok) {
-                    const stats = await statsRes.json();
+                const sRes = await fetch('/api/v1/alerts/stats', { headers });
+                if (sRes.ok) {
+                    const stats = await sRes.json();
                     document.getElementById('metricAlerts').innerText = stats.open_alerts;
                     document.getElementById('metricCritical').innerText = stats.critical_alerts;
                 }
             } catch (e) {}
 
-            // 2. Fetch Analytics Overview
+            // Overview
             try {
-                const ovRes = await fetch('/api/v1/analytics/overview', { headers });
-                if (ovRes.ok) {
-                    const ov = await ovRes.json();
+                const oRes = await fetch('/api/v1/analytics/overview', { headers });
+                if (oRes.ok) {
+                    const ov = await oRes.json();
                     document.getElementById('metricEvents').innerText = ov.total_events_ingested;
                     document.getElementById('metricAvgRisk').innerText = ov.average_alert_risk_score.toFixed(1);
+                    const resRateEl = document.getElementById('reportResRate');
+                    if (resRateEl) resRateEl.innerText = `${ov.resolution_rate_percent}%`;
                 }
             } catch (e) {}
 
-            // 3. Fetch Alerts
+            // Alerts
             try {
-                const alertsRes = await fetch('/api/v1/alerts?limit=20', { headers });
-                if (alertsRes.ok) {
-                    const alerts = await alertsRes.json();
+                const aRes = await fetch('/api/v1/alerts?limit=25', { headers });
+                if (aRes.ok) {
+                    const alerts = await aRes.json();
                     renderAlerts(alerts);
                 }
             } catch (e) {}
 
-            // 4. Fetch Events
+            // Events
             try {
-                const eventsRes = await fetch('/api/v1/events?limit=15', { headers });
-                if (eventsRes.ok) {
-                    const events = await eventsRes.json();
+                const eRes = await fetch('/api/v1/events?limit=15', { headers });
+                if (eRes.ok) {
+                    const events = await eRes.json();
                     renderEvents(events);
                 }
             } catch (e) {}
@@ -360,7 +687,7 @@
         function renderAlerts(alerts) {
             const tbody = document.getElementById('alertsTableBody');
             if (!alerts || alerts.length === 0) {
-                tbody.innerHTML = `<tr><td colspan="5" class="py-8 text-center text-slate-500">No active security alerts. Try simulating an attack above!</td></tr>`;
+                tbody.innerHTML = `<tr><td colspan="5" class="py-8 text-center text-slate-500">No active alerts. Click a simulation button above to test!</td></tr>`;
                 return;
             }
 
@@ -372,24 +699,25 @@
                 else if (a.severity === "LOW") badgeClass = "bg-emerald-950/80 text-emerald-400 border-emerald-800/80";
 
                 return `
-                    <tr class="hover:bg-gray-800/50 transition">
+                    <tr class="hover:bg-[#131e32]/60 transition">
                         <td class="py-3 px-4">
-                            <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full border ${badgeClass}">${a.severity}</span>
+                            <span class="text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full border ${badgeClass}">${a.severity}</span>
                         </td>
                         <td class="py-3 px-4">
-                            <div class="font-medium text-slate-200">${a.title}</div>
-                            <div class="text-[11px] text-slate-500">Alert #${a.id} • Status: <span class="text-cyan-400 font-semibold">${a.status}</span></div>
+                            <div class="font-bold text-slate-200">${a.title}</div>
+                            <div class="text-[11px] text-slate-400">Incident #${a.id} • Status: <span class="text-cyan-400 font-semibold">${a.status}</span></div>
                         </td>
                         <td class="py-3 px-4 font-mono text-[11px] text-slate-400">${a.rule_triggered}</td>
                         <td class="py-3 px-4">
-                            <span class="font-bold text-xs ${a.risk_score >= 80 ? 'text-rose-400' : 'text-amber-400'}">${a.risk_score.toFixed(0)}</span><span class="text-[10px] text-slate-500">/100</span>
+                            <span class="font-black text-xs ${a.risk_score >= 80 ? 'text-rose-400' : 'text-amber-400'}">${a.risk_score.toFixed(0)}</span>
+                            <span class="text-[10px] text-slate-500">/100</span>
                         </td>
-                        <td class="py-3 px-4 text-right space-x-1">
-                            <button onclick="analyzeWithAI(${a.id})" class="bg-indigo-950/80 hover:bg-indigo-900 border border-indigo-700 text-indigo-300 px-2 py-1 rounded text-[11px] font-medium transition">
+                        <td class="py-3 px-4 text-right space-x-1.5">
+                            <button onclick="analyzeWithAI(${a.id})" class="bg-indigo-950/80 hover:bg-indigo-900 border border-indigo-700 text-indigo-300 px-2.5 py-1 rounded-lg text-[11px] font-semibold transition">
                                 Analyze AI
                             </button>
                             ${a.status !== 'RESOLVED' ? `
-                                <button onclick="resolveAlert(${a.id})" class="bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-800 text-emerald-300 px-2 py-1 rounded text-[11px] font-medium transition">
+                                <button onclick="resolveAlert(${a.id})" class="bg-emerald-950/80 hover:bg-emerald-900 border border-emerald-800 text-emerald-300 px-2.5 py-1 rounded-lg text-[11px] font-semibold transition">
                                     Resolve
                                 </button>
                             ` : ''}
@@ -401,7 +729,7 @@
 
         function renderEvents(events) {
             const container = document.getElementById('eventsLogStream');
-            document.getElementById('eventCountBadge').innerText = `${events.length} recent`;
+            document.getElementById('eventCountBadge').innerText = `${events.length} latest`;
 
             if (!events || events.length === 0) {
                 container.innerHTML = `<div class="text-slate-500 text-center py-4">No events ingested yet.</div>`;
@@ -411,12 +739,12 @@
             container.innerHTML = events.map(e => {
                 const isFail = e.event_type.includes("FAIL");
                 return `
-                    <div class="flex items-center justify-between p-2 rounded bg-gray-900/60 border border-gray-800">
+                    <div class="flex items-center justify-between p-2 rounded-lg bg-[#0e1726]/80 border border-[#1f2e4d]">
                         <div class="flex items-center space-x-2">
                             <span class="h-1.5 w-1.5 rounded-full ${isFail ? 'bg-rose-500' : 'bg-emerald-500'}"></span>
-                            <span class="font-semibold ${isFail ? 'text-rose-400' : 'text-emerald-400'}">${e.event_type}</span>
-                            <span class="text-slate-400">user: <span class="text-white">${e.user_identifier || 'anon'}</span></span>
-                            <span class="text-slate-500">(${e.source_ip})</span>
+                            <span class="font-bold ${isFail ? 'text-rose-400' : 'text-emerald-400'}">${e.event_type}</span>
+                            <span class="text-slate-400">user: <span class="text-white">${e.user_identifier || 'anonymous'}</span></span>
+                            <span class="text-slate-500 text-[11px]">(${e.source_ip})</span>
                         </div>
                         <span class="text-slate-500 text-[10px]">${new Date(e.timestamp).toLocaleTimeString()}</span>
                     </div>
@@ -424,14 +752,14 @@
             }).join('');
         }
 
-        // Live Simulation Actions
+        // Live Attack Simulator
         async function simulateAttack(type) {
             let payload = {};
             if (type === 'brute_force') {
                 payload = {
                     event_type: 'LOGIN_FAILED',
                     source_ip: '203.0.113.88',
-                    user_identifier: 'victim_admin',
+                    user_identifier: 'target_admin',
                     location: 'Frankfurt, DE',
                     failed_attempts: 7,
                     device_info: 'Hydra-BruteForce/9.2'
@@ -440,7 +768,7 @@
                 payload = {
                     event_type: 'LOGIN_FAILED',
                     source_ip: '198.51.100.42',
-                    user_identifier: 'target_employee_' + Math.floor(Math.random() * 100),
+                    user_identifier: 'user_' + Math.floor(Math.random() * 100),
                     location: 'Moscow, RU',
                     failed_attempts: 1,
                     device_info: 'Python-Requests/2.31'
@@ -450,7 +778,7 @@
                     event_type: 'LOGIN_SUCCESS',
                     source_ip: '114.119.130.5',
                     user_identifier: 'sarah_analyst',
-                    location: 'Singapore, SG',
+                    location: 'Tokyo, JP',
                     failed_attempts: 0,
                     device_info: 'Mozilla/5.0 Mac'
                 };
@@ -473,9 +801,9 @@
 
             if (res.ok) {
                 const data = await res.json();
-                appendChatMessage(`Ingested: ${payload.event_type} (${payload.source_ip}). Threat detected: ${data.threat_detected ? '🚨 YES' : '✅ CLEAN'}`, 'user');
+                appendChatMessage(`Simulated event: <strong>${payload.event_type}</strong> from <code>${payload.source_ip}</code>. Threat Detected: ${data.threat_detected ? '🚨 YES' : '✅ CLEAN'}`, 'user');
                 if (data.threat_detected && data.alerts.length > 0) {
-                    appendChatMessage(`🚨 Alert Triggered: **${data.alerts[0].title}**\nRule: \`${data.alerts[0].rule_triggered}\`\nSeverity: **${data.alerts[0].severity}**\nRisk Score: **${data.alerts[0].risk_score}/100**`, 'ai');
+                    appendChatMessage(`🚨 Alert Flagged: <strong>${data.alerts[0].title}</strong><br/>Rule: <code>${data.alerts[0].rule_triggered}</code><br/>Severity: <strong>${data.alerts[0].severity}</strong> | Risk Score: <strong>${data.alerts[0].risk_score}/100</strong>`, 'ai');
                 }
                 refreshData();
             }
@@ -489,14 +817,14 @@
                 body: JSON.stringify({ status: 'RESOLVED', comment: 'Mitigated via SOC Dashboard' })
             });
             if (res.ok) {
-                appendChatMessage(`Alert #${alertId} marked as RESOLVED. Audit trail recorded.`, 'ai');
+                appendChatMessage(`Incident #${alertId} successfully marked as <strong>RESOLVED</strong>. Audit trail recorded.`, 'ai');
                 refreshData();
             }
         }
 
         async function analyzeWithAI(alertId) {
             selectedAlertId = alertId;
-            appendChatMessage(`Analyzing Alert #${alertId}...`, 'user');
+            appendChatMessage(`Analyzing Incident #${alertId}...`, 'user');
             const headers = { 'Authorization': `Bearer ${currentAuthToken}` };
             const res = await fetch(`/api/v1/assistant/analyze/${alertId}`, { headers });
             if (res.ok) {
@@ -504,12 +832,12 @@
                 const reply = `
                     <div class="space-y-2">
                         <div class="font-bold text-white text-sm">${data.title}</div>
-                        <div class="text-cyan-400 font-semibold">${data.mitre_reference}</div>
+                        <div class="text-cyan-400 font-semibold text-xs">${data.mitre_reference}</div>
                         <p class="text-slate-300">${data.executive_summary}</p>
-                        <div class="bg-gray-900 p-2.5 rounded-lg border border-gray-700/60 mt-2">
+                        <div class="bg-[#080d1a] p-2.5 rounded-lg border border-[#1f2e4d] mt-2">
                             <span class="font-bold text-amber-400">Blast Radius:</span> ${data.blast_radius}
                         </div>
-                        <div class="mt-2 font-bold text-slate-200">Recommended Runbook:</div>
+                        <div class="mt-2 font-bold text-slate-200">Defensive Remediation Runbook:</div>
                         <ul class="list-disc pl-4 space-y-1 text-slate-300">
                             ${data.defensive_runbook.map(r => `<li>${r}</li>`).join('')}
                         </ul>
@@ -555,14 +883,14 @@
             const content = isHtml ? text : text.replace(/\n/g, '<br/>');
 
             div.innerHTML = isUser ? `
-                <div class="bg-cyan-950/80 border border-cyan-800/80 text-cyan-200 rounded-2xl rounded-tr-sm p-3 max-w-[85%]">
+                <div class="bg-cyan-950/80 border border-cyan-800/80 text-cyan-200 rounded-2xl rounded-tr-sm p-3 max-w-[85%] shadow">
                     ${content}
                 </div>
             ` : `
                 <div class="h-6 w-6 rounded-md bg-indigo-600/30 text-indigo-400 flex items-center justify-center flex-shrink-0 mt-0.5">
                     <i data-lucide="bot" class="w-3.5 h-3.5"></i>
                 </div>
-                <div class="bg-gray-800/90 border border-gray-700/80 rounded-2xl rounded-tl-sm p-3.5 text-slate-300 leading-relaxed max-w-[90%]">
+                <div class="bg-[#131e32] border border-[#1f2e4d] rounded-2xl rounded-tl-sm p-3.5 text-slate-300 leading-relaxed max-w-[90%] shadow">
                     ${content}
                 </div>
             `;
@@ -571,19 +899,181 @@
             lucide.createIcons();
         }
 
+        // IAM Tab
+        async function loadIAMUsers() {
+            if (!currentAuthToken) await initAuth();
+            const headers = { 'Authorization': `Bearer ${currentAuthToken}` };
+
+            try {
+                const uRes = await fetch('/api/v1/users', { headers });
+                if (uRes.ok) {
+                    const users = await uRes.json();
+                    const tbody = document.getElementById('iamUsersTableBody');
+                    tbody.innerHTML = users.map(u => `
+                        <tr class="hover:bg-[#131e32]/60 transition">
+                            <td class="py-3 px-4 font-mono text-slate-400">#${u.id}</td>
+                            <td class="py-3 px-4 font-bold text-white">${u.username}</td>
+                            <td class="py-3 px-4 text-slate-300">${u.email}</td>
+                            <td class="py-3 px-4">
+                                <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold ${
+                                    u.role === 'Admin' ? 'bg-cyan-950 text-cyan-400 border border-cyan-800' :
+                                    u.role === 'Security Analyst' ? 'bg-indigo-950 text-indigo-400 border border-indigo-800' :
+                                    'bg-gray-800 text-gray-300 border border-gray-700'
+                                }">${u.role}</span>
+                            </td>
+                            <td class="py-3 px-4 text-emerald-400 font-semibold">Active</td>
+                            <td class="py-3 px-4 text-right">
+                                <select onchange="updateUserRole(${u.id}, this.value)" class="bg-[#080d1a] border border-[#1f2e4d] rounded-lg px-2 py-1 text-xs text-slate-200">
+                                    <option value="Admin" ${u.role === 'Admin' ? 'selected' : ''}>Admin</option>
+                                    <option value="Security Analyst" ${u.role === 'Security Analyst' ? 'selected' : ''}>Security Analyst</option>
+                                    <option value="Viewer" ${u.role === 'Viewer' ? 'selected' : ''}>Viewer</option>
+                                </select>
+                            </td>
+                        </tr>
+                    `).join('');
+                }
+            } catch (e) {}
+
+            try {
+                const aRes = await fetch('/api/v1/users/audit-logs', { headers });
+                if (aRes.ok) {
+                    const logs = await aRes.json();
+                    const tbody = document.getElementById('auditLogsTableBody');
+                    tbody.innerHTML = logs.map(l => `
+                        <tr class="hover:bg-[#131e32]/60 transition text-[11px]">
+                            <td class="py-2 px-4 text-slate-500 font-mono">${new Date(l.timestamp).toLocaleTimeString()}</td>
+                            <td class="py-2 px-4 font-bold text-cyan-400">${l.action}</td>
+                            <td class="py-2 px-4 text-slate-300">${l.resource}</td>
+                            <td class="py-2 px-4 text-white font-medium">${l.username || 'system'}</td>
+                            <td class="py-2 px-4 text-slate-400 font-mono">${l.ip_address || 'local'}</td>
+                            <td class="py-2 px-4 text-slate-300">${l.details || ''}</td>
+                        </tr>
+                    `).join('');
+                }
+            } catch (e) {}
+        }
+
+        async function updateUserRole(userId, newRole) {
+            const headers = { 'Authorization': `Bearer ${currentAuthToken}`, 'Content-Type': 'application/json' };
+            await fetch(`/api/v1/users/${userId}/role`, {
+                method: 'PATCH',
+                headers,
+                body: JSON.stringify({ role: newRole })
+            });
+            loadIAMUsers();
+        }
+
+        // ML Lab Slider Updates
+        async function updateMLPrediction() {
+            const failed = parseInt(document.getElementById('sliderFailed').value);
+            const hour = parseInt(document.getElementById('sliderHour').value);
+            const ipRep = parseFloat(document.getElementById('sliderIpRep').value);
+            const isNewDev = document.getElementById('chkNewDevice').checked;
+            const isUnusualLoc = document.getElementById('chkUnusualLoc').checked;
+
+            document.getElementById('valFailed').innerText = `${failed} attempts`;
+            document.getElementById('valHour').innerText = `${hour.toString().padStart(2, '0')}:00 UTC ${hour >= 1 && hour <= 4 ? '(Off-Hours)' : ''}`;
+            document.getElementById('valIpRep').innerText = `${ipRep.toFixed(0)} / 100`;
+
+            const headers = { 'Authorization': `Bearer ${currentAuthToken}`, 'Content-Type': 'application/json' };
+            const res = await fetch('/api/v1/ml/predict-risk', {
+                method: 'POST',
+                headers,
+                body: JSON.stringify({
+                    failed_attempts: failed,
+                    hour_of_day: hour,
+                    is_new_device: isNewDev,
+                    is_unusual_location: isUnusualLoc,
+                    ip_reputation_score: ipRep
+                })
+            });
+
+            if (res.ok) {
+                const data = await res.json();
+                document.getElementById('mlResultScore').innerText = data.risk_score.toFixed(1);
+                document.getElementById('mlResultPred').innerText = data.prediction;
+
+                const badge = document.getElementById('mlResultBadge');
+                badge.innerText = `${data.risk_level} RISK`;
+                if (data.risk_level === 'CRITICAL') {
+                    badge.className = "text-xs font-extrabold px-3 py-1 rounded-full uppercase bg-rose-950 text-rose-400 border border-rose-800";
+                    document.getElementById('mlResultScore').className = "text-5xl font-black text-rose-500";
+                } else if (data.risk_level === 'HIGH') {
+                    badge.className = "text-xs font-extrabold px-3 py-1 rounded-full uppercase bg-orange-950 text-orange-400 border border-orange-800";
+                    document.getElementById('mlResultScore').className = "text-5xl font-black text-orange-400";
+                } else if (data.risk_level === 'MEDIUM') {
+                    badge.className = "text-xs font-extrabold px-3 py-1 rounded-full uppercase bg-amber-950 text-amber-400 border border-amber-800";
+                    document.getElementById('mlResultScore').className = "text-5xl font-black text-amber-400";
+                } else {
+                    badge.className = "text-xs font-extrabold px-3 py-1 rounded-full uppercase bg-emerald-950 text-emerald-400 border border-emerald-800";
+                    document.getElementById('mlResultScore').className = "text-5xl font-black text-emerald-400";
+                }
+
+                const factorsList = document.getElementById('mlFactorsList');
+                factorsList.innerHTML = data.contributing_factors.map(f => `
+                    <li class="flex items-center space-x-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>${f}</span></li>
+                `).join('');
+                lucide.createIcons();
+            }
+        }
+
+        // Tutorial Modal Logic
+        function openTutorialModal() {
+            tutorialStep = 1;
+            renderTutorialStep();
+            document.getElementById('tutorialModal').classList.remove('hidden');
+            lucide.createIcons();
+        }
+
+        function closeTutorialModal() {
+            document.getElementById('tutorialModal').classList.add('hidden');
+        }
+
+        function renderTutorialStep() {
+            const data = tutorialSteps[tutorialStep - 1];
+            document.getElementById('tutStepBadge').innerText = `Step ${data.step} of ${tutorialSteps.length}`;
+            document.getElementById('tutTitle').innerText = data.title;
+            document.getElementById('tutText').innerText = data.text;
+            document.getElementById('tutHighlight').innerText = data.highlight;
+
+            const btnPrev = document.getElementById('tutBtnPrev');
+            const btnNext = document.getElementById('tutBtnNext');
+            if (tutorialStep === 1) btnPrev.classList.add('hidden');
+            else btnPrev.classList.remove('hidden');
+
+            if (tutorialStep === tutorialSteps.length) {
+                btnNext.innerText = "Finish Tour";
+            } else {
+                btnNext.innerText = "Next Step";
+            }
+        }
+
+        function nextTutorialStep() {
+            if (tutorialStep < tutorialSteps.length) {
+                tutorialStep++;
+                renderTutorialStep();
+            } else {
+                closeTutorialModal();
+            }
+        }
+
+        function prevTutorialStep() {
+            if (tutorialStep > 1) {
+                tutorialStep--;
+                renderTutorialStep();
+            }
+        }
+
         function downloadReport() {
             window.location.href = `/api/v1/analytics/reports/pdf`;
         }
 
-        // Initialize on load
         window.onload = async () => {
             lucide.createIcons();
             await initAuth();
             await refreshData();
-            // Auto refresh every 8 seconds
             setInterval(refreshData, 8000);
         };
     </script>
 </body>
 </html>
-

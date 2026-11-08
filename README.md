@@ -78,31 +78,31 @@ Sentinel AI synthesizes competencies demonstrated across four industry simulatio
 
 ---
 
-## 🚀 Quickstart Guide
+## 🚀 Quickstart & Interactive Dashboard
 
-### 1. Backend Setup
+### 1. Launch the Application (One Command)
 ```bash
 # Navigate to backend
 cd backend
 
-# Create and activate virtual environment (if not already done)
-python -m venv .venv
+# Activate your virtual environment
 .\.venv\Scripts\activate   # On Windows
-# source .venv/bin/activate  # On Linux/macOS
 
-# Install dependencies
-pip install -r requirements.txt
-
-# Start FastAPI development server
-uvicorn app.main:app --reload --port 8000
+# Start the Sentinel AI platform
+python main.py
 ```
-Open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser to view the interactive OpenAPI documentation.
 
-### 2. Frontend Setup
+### 2. Access the Interfaces
+* 🛡️ **Interactive SOC Dashboard:** [http://127.0.0.1:8000/dashboard](http://127.0.0.1:8000/dashboard)
+* 📖 **Step-by-Step User Tutorial:** See [docs/TUTORIAL.md](docs/TUTORIAL.md) or click **"Quick Tutorial"** directly inside the dashboard!
+* 📑 **Interactive OpenAPI Swagger:** [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+### 3. Standalone React Frontend (Optional)
 ```bash
 cd frontend
 npm install
 npm run dev
+```
 ```
 
 ---

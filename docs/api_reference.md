@@ -128,3 +128,4 @@ Returns high-level SOC statistics (total events, alert counts, resolution rates)
 
 ### `GET /analytics/reports/pdf`
 Generates and downloads a binary Executive PDF Compliance & Audit Report.
+
