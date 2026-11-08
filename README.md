@@ -110,8 +110,8 @@ npm run dev
 ## 📋 Development Roadmap
 - [x] **Phase 1: Project Blueprint & Foundation** (Repository structure, .gitignore, documentation)
 - [x] **Phase 2: Backend Architecture & FastAPI Core** (Health endpoints, configuration, database connectivity)
-- [ ] **Phase 3: Module A — Identity & Access Management (IAM & RBAC)**
-- [ ] **Phase 4: Module B — Security Event Ingestion & Threat Detection**
+- [x] **Phase 3: Module A — Identity & Access Management (IAM & RBAC)**
+- [x] **Phase 4: Module B — Security Event Ingestion & Threat Detection**
 - [ ] **Phase 5: Module C — Machine Learning Risk Engine**
 - [ ] **Phase 6: Module D — GenAI Incident Assistant**
 - [ ] **Phase 7: Module E — Security Reporting & Analytics Engine**
