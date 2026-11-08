@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: sentinel-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - ENVIRONMENT=production
+      - DEBUG=False
+      - DATABASE_URL=postgresql+psycopg://sentinel_admin:sentinel_secure_pass@db:5432/sentinel_ai
+      - SECRET_KEY=sentinel_prod_jwt_super_secure_key_123456
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16-alpine
+    container_name: sentinel-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: sentinel_admin
+      POSTGRES_PASSWORD: sentinel_secure_pass
+      POSTGRES_DB: sentinel_ai
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

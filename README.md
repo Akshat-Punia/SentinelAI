@@ -112,11 +112,11 @@ npm run dev
 - [x] **Phase 2: Backend Architecture & FastAPI Core** (Health endpoints, configuration, database connectivity)
 - [x] **Phase 3: Module A — Identity & Access Management (IAM & RBAC)**
 - [x] **Phase 4: Module B — Security Event Ingestion & Threat Detection**
-- [ ] **Phase 5: Module C — Machine Learning Risk Engine**
-- [ ] **Phase 6: Module D — GenAI Incident Assistant**
-- [ ] **Phase 7: Module E — Security Reporting & Analytics Engine**
-- [ ] **Phase 8: Module F — React SOC Dashboard Integration**
-- [ ] **Phase 9: Dockerization, Testing & Portfolio Showcase**
+- [x] **Phase 5: Module C — Machine Learning Risk Engine**
+- [x] **Phase 6: Module D — GenAI Incident Assistant**
+- [x] **Phase 7: Module E — Security Reporting & Analytics Engine**
+- [x] **Phase 8: Module F — React SOC Dashboard Integration**
+- [x] **Phase 9: Dockerization, Testing & Portfolio Showcase**
 
 ---
 

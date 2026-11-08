@@ -37,3 +37,4 @@ class AlertStats(BaseModel):
     high_alerts: int
     medium_alerts: int
     low_alerts: int
+

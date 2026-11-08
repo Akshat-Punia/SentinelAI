@@ -1,8 +1,10 @@
 from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi.responses import HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 from datetime import datetime
+from pathlib import Path
 
 from app.core.config import settings
 from app.db.session import engine, Base, get_db
@@ -37,11 +39,21 @@ def on_startup():
     Base.metadata.create_all(bind=engine)
 
 
+@app.get("/dashboard", response_class=HTMLResponse, tags=["SOC Dashboard"])
+def serve_soc_dashboard():
+    """Serves the interactive Sentinel AI SOC Operations Center Dashboard."""
+    dashboard_path = Path(__file__).resolve().parent / "static" / "dashboard.html"
+    if dashboard_path.exists():
+        return HTMLResponse(content=dashboard_path.read_text(encoding="utf-8"))
+    return HTMLResponse(content="<h1>Sentinel AI Dashboard: static/dashboard.html missing</h1>")
+
+
 @app.get("/", tags=["General"])
 def root():
     return {
         "message": f"Welcome to {settings.PROJECT_NAME} API",
         "description": "AI-Powered Security, Identity & Risk Intelligence Platform",
+        "dashboard": "/dashboard",
         "docs": "/docs",
         "status": "online",
         "timestamp": datetime.utcnow().isoformat()

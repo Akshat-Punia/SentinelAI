@@ -31,3 +31,4 @@ class EventIngestResponse(BaseModel):
     event: SecurityEventResponse
     threat_detected: bool
     alerts: List[AlertResponse]
+
