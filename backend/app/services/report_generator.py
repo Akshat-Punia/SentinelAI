@@ -155,3 +155,4 @@ class SecurityReportGenerator:
             b"trailer\n<< /Size 6 /Root 1 0 R >>\nstartxref\n380\n%%EOF"
         )
         return pdf
+

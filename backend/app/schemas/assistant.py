@@ -27,3 +27,4 @@ class AlertAnalysisResponse(BaseModel):
     blast_radius: str
     mitre_reference: str
     defensive_runbook: List[str]
+

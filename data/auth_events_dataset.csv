@@ -1,0 +1,1201 @@
+timestamp,user_identifier,source_ip,event_type,location,device_info,failed_attempts,hour_of_day,is_new_device,is_unusual_location,ip_reputation_score,threat_type,is_malicious
+2026-11-02 14:25:00,alice.smith,192.168.1.72,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,2,BENIGN,0
+2026-11-08 01:15:00,grace.wilson,192.168.1.33,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,0,BENIGN,0
+2026-11-07 17:16:00,david.brown,192.168.1.189,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,8,BENIGN,0
+2026-11-01 09:47:00,carol.white,192.168.1.97,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,10,BENIGN,0
+2026-11-02 11:55:00,bob.jones,192.168.1.101,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,1,BENIGN,0
+2026-11-06 13:28:00,it_support,192.168.1.246,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,11,BENIGN,0
+2026-11-07 21:40:00,david.brown,192.168.1.21,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,21,0,0,7,BENIGN,0
+2026-11-02 11:35:00,grace.wilson,192.168.1.172,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,6,BENIGN,0
+2026-11-04 08:55:00,bob.jones,192.168.1.53,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,8,BENIGN,0
+2026-11-07 16:06:00,david.brown,192.168.1.225,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,10,BENIGN,0
+2026-11-05 21:33:00,emma.davis,192.168.1.243,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,12,BENIGN,0
+2026-11-06 13:18:00,carol.white,192.168.1.73,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,12,BENIGN,0
+2026-11-05 10:51:00,david.brown,10.200.9.33,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,23,OFF_HOURS,1
+2026-11-03 01:45:00,carol.white,203.0.113.55,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,11,1,1,1,89,BRUTE_FORCE,1
+2026-11-06 15:49:00,it_support,192.168.1.151,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,8,BENIGN,0
+2026-11-05 04:54:00,bob.jones,192.168.1.50,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,4,0,0,8,BENIGN,0
+2026-11-07 00:42:00,carol.white,192.168.1.37,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,6,BENIGN,0
+2026-11-03 01:45:00,frank.miller,203.0.113.70,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,12,1,1,1,70,BRUTE_FORCE,1
+2026-11-02 14:33:00,frank.miller,198.51.100.20,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,14,1,1,81,SPRAY_ATTACK,1
+2026-11-04 01:47:00,devops_lead,114.119.22.188,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,1,1,74,IMPOSSIBLE_TRAVEL,1
+2026-11-02 18:21:00,carol.white,192.168.1.150,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,13,BENIGN,0
+2026-11-03 17:51:00,it_support,203.0.113.89,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,11,17,1,1,91,BRUTE_FORCE,1
+2026-11-05 13:59:00,admin_corp,198.51.100.29,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,13,1,1,87,SPRAY_ATTACK,1
+2026-11-03 21:22:00,bob.jones,192.168.1.160,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,21,0,0,2,BENIGN,0
+2026-11-02 00:05:00,david.brown,192.168.1.18,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,8,BENIGN,0
+2026-11-06 20:34:00,david.brown,192.168.1.195,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,13,BENIGN,0
+2026-11-03 12:00:00,bob.jones,192.168.1.120,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,1,BENIGN,0
+2026-11-02 10:53:00,alice.smith,192.168.1.96,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,14,BENIGN,0
+2026-11-02 22:17:00,grace.wilson,192.168.1.128,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,3,BENIGN,0
+2026-11-01 21:49:00,it_support,203.0.113.12,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,11,21,1,1,85,BRUTE_FORCE,1
+2026-11-06 19:27:00,david.brown,198.51.100.4,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,19,1,1,92,SPRAY_ATTACK,1
+2026-11-01 08:36:00,grace.wilson,192.168.1.210,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,15,BENIGN,0
+2026-11-03 02:17:00,david.brown,192.168.1.24,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,1,BENIGN,0
+2026-11-07 23:32:00,admin_corp,192.168.1.228,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,23,0,0,2,BENIGN,0
+2026-11-03 10:45:00,bob.jones,192.168.1.182,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,7,BENIGN,0
+2026-11-07 22:06:00,devops_lead,192.168.1.30,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,10,BENIGN,0
+2026-11-04 07:13:00,david.brown,192.168.1.90,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,9,BENIGN,0
+2026-11-06 12:52:00,frank.miller,114.119.19.3,LOGIN_SUCCESS,"Singapore, SG",Python-urllib/3.12,0,12,1,1,46,IMPOSSIBLE_TRAVEL,1
+2026-11-02 04:01:00,it_support,192.168.1.77,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,7,BENIGN,0
+2026-11-05 12:55:00,emma.davis,192.168.1.223,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,12,0,0,0,BENIGN,0
+2026-11-07 15:27:00,emma.davis,114.119.27.35,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,1,1,46,IMPOSSIBLE_TRAVEL,1
+2026-11-07 15:05:00,carol.white,192.168.1.164,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,8,BENIGN,0
+2026-11-07 02:01:00,admin_corp,192.168.1.242,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,8,BENIGN,0
+2026-11-01 20:03:00,alice.smith,192.168.1.43,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,13,BENIGN,0
+2026-11-07 17:10:00,alice.smith,192.168.1.236,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,11,BENIGN,0
+2026-11-07 23:04:00,it_support,192.168.1.42,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,1,BENIGN,0
+2026-11-05 09:43:00,david.brown,192.168.1.180,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,13,BENIGN,0
+2026-11-03 02:13:00,david.brown,198.51.100.12,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,2,1,1,80,SPRAY_ATTACK,1
+2026-11-03 08:59:00,frank.miller,203.0.113.53,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,7,8,1,1,95,BRUTE_FORCE,1
+2026-11-02 13:32:00,grace.wilson,198.51.100.31,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,13,1,1,86,SPRAY_ATTACK,1
+2026-11-06 13:42:00,frank.miller,192.168.1.213,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,6,BENIGN,0
+2026-11-05 20:49:00,frank.miller,192.168.1.27,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,12,BENIGN,0
+2026-11-07 10:26:00,frank.miller,114.119.30.67,LOGIN_SUCCESS,"Sydney, AU",Python-urllib/3.12,0,10,1,1,56,IMPOSSIBLE_TRAVEL,1
+2026-11-01 18:27:00,bob.jones,192.168.1.98,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,3,BENIGN,0
+2026-11-05 17:12:00,devops_lead,192.168.1.21,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,6,BENIGN,0
+2026-11-05 11:28:00,grace.wilson,192.168.1.180,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,3,BENIGN,0
+2026-11-04 18:01:00,it_support,192.168.1.114,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,4,BENIGN,0
+2026-11-03 12:24:00,grace.wilson,192.168.1.107,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,12,BENIGN,0
+2026-11-07 13:38:00,alice.smith,192.168.1.63,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,10,BENIGN,0
+2026-11-06 14:59:00,admin_corp,192.168.1.64,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,2,BENIGN,0
+2026-11-04 13:30:00,it_support,192.168.1.168,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,7,BENIGN,0
+2026-11-04 20:46:00,david.brown,203.0.113.19,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,8,20,1,1,85,BRUTE_FORCE,1
+2026-11-02 03:54:00,admin_corp,192.168.1.171,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,15,BENIGN,0
+2026-11-05 21:08:00,david.brown,192.168.1.186,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,7,BENIGN,0
+2026-11-03 08:02:00,it_support,192.168.1.152,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,14,BENIGN,0
+2026-11-07 09:03:00,it_support,192.168.1.203,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,9,0,0,13,BENIGN,0
+2026-11-07 13:37:00,admin_corp,198.51.100.48,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,13,1,1,94,SPRAY_ATTACK,1
+2026-11-04 06:47:00,david.brown,203.0.113.36,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,9,6,1,1,84,BRUTE_FORCE,1
+2026-11-02 05:10:00,emma.davis,192.168.1.95,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,4,BENIGN,0
+2026-11-03 23:09:00,grace.wilson,192.168.1.190,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,10,BENIGN,0
+2026-11-07 12:11:00,admin_corp,192.168.1.62,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,12,0,0,0,BENIGN,0
+2026-11-07 21:13:00,grace.wilson,192.168.1.100,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,13,BENIGN,0
+2026-11-07 10:59:00,it_support,203.0.113.29,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,9,10,1,1,83,BRUTE_FORCE,1
+2026-11-06 20:37:00,alice.smith,192.168.1.181,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,14,BENIGN,0
+2026-11-02 18:52:00,devops_lead,192.168.1.242,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,0,BENIGN,0
+2026-11-02 06:56:00,grace.wilson,192.168.1.128,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,10,BENIGN,0
+2026-11-03 17:48:00,admin_corp,192.168.1.204,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,13,BENIGN,0
+2026-11-04 04:54:00,bob.jones,192.168.1.201,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,2,BENIGN,0
+2026-11-01 19:00:00,alice.smith,114.119.52.6,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,1,1,55,IMPOSSIBLE_TRAVEL,1
+2026-11-02 18:29:00,admin_corp,192.168.1.154,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,11,BENIGN,0
+2026-11-03 05:50:00,devops_lead,192.168.1.201,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,5,0,0,3,BENIGN,0
+2026-11-07 22:02:00,alice.smith,114.119.148.174,LOGIN_SUCCESS,"Singapore, SG",curl/7.88.1,0,22,1,1,52,IMPOSSIBLE_TRAVEL,1
+2026-11-02 04:46:00,devops_lead,192.168.1.170,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,9,BENIGN,0
+2026-11-08 03:58:00,bob.jones,203.0.113.73,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,13,3,1,1,83,BRUTE_FORCE,1
+2026-11-05 13:12:00,bob.jones,192.168.1.97,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,3,BENIGN,0
+2026-11-06 06:23:00,frank.miller,192.168.1.222,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,5,BENIGN,0
+2026-11-07 06:29:00,emma.davis,192.168.1.245,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,6,0,0,8,BENIGN,0
+2026-11-05 00:01:00,david.brown,203.0.113.12,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,8,0,1,1,94,BRUTE_FORCE,1
+2026-11-06 14:54:00,devops_lead,192.168.1.107,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,10,BENIGN,0
+2026-11-03 09:40:00,admin_corp,192.168.1.214,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,8,BENIGN,0
+2026-11-07 15:47:00,alice.smith,192.168.1.58,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,15,BENIGN,0
+2026-11-07 15:37:00,david.brown,192.168.1.175,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,2,BENIGN,0
+2026-11-04 16:21:00,david.brown,192.168.1.72,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,15,BENIGN,0
+2026-11-07 15:09:00,it_support,192.168.1.200,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,8,BENIGN,0
+2026-11-04 19:44:00,emma.davis,192.168.1.194,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,5,BENIGN,0
+2026-11-03 12:19:00,david.brown,192.168.1.80,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,9,BENIGN,0
+2026-11-03 22:08:00,frank.miller,192.168.1.13,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,1,BENIGN,0
+2026-11-07 15:07:00,emma.davis,192.168.1.42,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,9,BENIGN,0
+2026-11-06 16:11:00,admin_corp,192.168.1.57,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,16,0,0,15,BENIGN,0
+2026-11-02 15:10:00,bob.jones,192.168.1.28,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,9,BENIGN,0
+2026-11-02 07:16:00,david.brown,192.168.1.205,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,7,BENIGN,0
+2026-11-07 06:42:00,grace.wilson,192.168.1.123,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,6,0,0,9,BENIGN,0
+2026-11-07 19:17:00,devops_lead,192.168.1.199,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,8,BENIGN,0
+2026-11-02 06:11:00,carol.white,192.168.1.151,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,14,BENIGN,0
+2026-11-08 02:10:00,admin_corp,192.168.1.69,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,14,BENIGN,0
+2026-11-02 03:27:00,david.brown,114.119.161.151,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,1,1,67,IMPOSSIBLE_TRAVEL,1
+2026-11-02 15:21:00,it_support,192.168.1.48,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,5,BENIGN,0
+2026-11-04 20:00:00,devops_lead,192.168.1.155,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,9,BENIGN,0
+2026-11-05 21:55:00,emma.davis,192.168.1.136,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,13,BENIGN,0
+2026-11-05 00:01:00,devops_lead,192.168.1.33,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,0,BENIGN,0
+2026-11-04 09:36:00,devops_lead,192.168.1.203,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,14,BENIGN,0
+2026-11-04 11:58:00,carol.white,10.200.28.41,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,31,OFF_HOURS,1
+2026-11-05 23:31:00,frank.miller,192.168.1.36,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,15,BENIGN,0
+2026-11-04 14:43:00,grace.wilson,203.0.113.71,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,6,14,1,1,80,BRUTE_FORCE,1
+2026-11-04 04:56:00,frank.miller,192.168.1.207,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,0,BENIGN,0
+2026-11-07 12:10:00,admin_corp,192.168.1.58,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,14,BENIGN,0
+2026-11-01 22:06:00,david.brown,192.168.1.43,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,15,BENIGN,0
+2026-11-02 17:10:00,alice.smith,10.200.39.16,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,37,OFF_HOURS,1
+2026-11-01 11:45:00,it_support,192.168.1.67,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,11,0,0,4,BENIGN,0
+2026-11-07 00:06:00,emma.davis,192.168.1.79,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,0,0,0,7,BENIGN,0
+2026-11-06 12:44:00,it_support,192.168.1.58,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,13,BENIGN,0
+2026-11-05 04:49:00,it_support,192.168.1.10,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,15,BENIGN,0
+2026-11-03 00:35:00,admin_corp,192.168.1.98,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,12,BENIGN,0
+2026-11-06 12:21:00,frank.miller,198.51.100.45,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,12,1,1,98,SPRAY_ATTACK,1
+2026-11-05 16:35:00,david.brown,198.51.100.27,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,16,1,1,90,SPRAY_ATTACK,1
+2026-11-06 17:10:00,grace.wilson,192.168.1.179,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,17,0,0,4,BENIGN,0
+2026-11-07 01:10:00,devops_lead,192.168.1.35,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,14,BENIGN,0
+2026-11-01 12:12:00,carol.white,192.168.1.177,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,8,BENIGN,0
+2026-11-05 04:27:00,devops_lead,192.168.1.176,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,12,BENIGN,0
+2026-11-04 22:29:00,admin_corp,198.51.100.3,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,22,1,1,82,SPRAY_ATTACK,1
+2026-11-04 00:07:00,emma.davis,10.200.48.6,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,34,OFF_HOURS,1
+2026-11-03 05:26:00,emma.davis,198.51.100.3,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,5,1,1,81,SPRAY_ATTACK,1
+2026-11-04 16:07:00,frank.miller,192.168.1.47,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,5,BENIGN,0
+2026-11-03 06:26:00,carol.white,192.168.1.232,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,15,BENIGN,0
+2026-11-07 23:15:00,carol.white,192.168.1.173,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,0,BENIGN,0
+2026-11-06 15:03:00,emma.davis,192.168.1.50,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,15,0,0,9,BENIGN,0
+2026-11-06 03:52:00,emma.davis,192.168.1.87,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,3,BENIGN,0
+2026-11-04 00:47:00,grace.wilson,192.168.1.157,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,12,BENIGN,0
+2026-11-04 10:58:00,alice.smith,192.168.1.185,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,9,BENIGN,0
+2026-11-03 22:51:00,devops_lead,203.0.113.29,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,7,22,1,1,90,BRUTE_FORCE,1
+2026-11-02 10:32:00,alice.smith,192.168.1.122,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,4,BENIGN,0
+2026-11-02 08:37:00,emma.davis,192.168.1.116,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,11,BENIGN,0
+2026-11-07 08:58:00,it_support,114.119.43.66,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,1,1,61,IMPOSSIBLE_TRAVEL,1
+2026-11-02 15:27:00,admin_corp,10.200.10.49,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,22,OFF_HOURS,1
+2026-11-05 19:45:00,alice.smith,192.168.1.41,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,8,BENIGN,0
+2026-11-07 23:38:00,grace.wilson,203.0.113.48,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,12,23,1,1,70,BRUTE_FORCE,1
+2026-11-07 17:19:00,frank.miller,114.119.57.166,LOGIN_SUCCESS,"Sydney, AU",curl/7.88.1,0,17,1,1,59,IMPOSSIBLE_TRAVEL,1
+2026-11-05 23:30:00,bob.jones,192.168.1.19,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,7,BENIGN,0
+2026-11-07 10:48:00,carol.white,192.168.1.104,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,4,BENIGN,0
+2026-11-06 01:18:00,bob.jones,203.0.113.79,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,5,1,1,1,92,BRUTE_FORCE,1
+2026-11-05 13:11:00,david.brown,192.168.1.70,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,13,0,0,11,BENIGN,0
+2026-11-07 12:41:00,frank.miller,192.168.1.80,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,12,0,0,14,BENIGN,0
+2026-11-02 09:02:00,david.brown,192.168.1.162,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,7,BENIGN,0
+2026-11-02 18:24:00,devops_lead,192.168.1.222,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,7,BENIGN,0
+2026-11-05 01:44:00,carol.white,203.0.113.77,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,7,1,1,1,74,BRUTE_FORCE,1
+2026-11-07 11:31:00,emma.davis,203.0.113.15,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,5,11,1,1,81,BRUTE_FORCE,1
+2026-11-04 00:59:00,devops_lead,192.168.1.54,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,13,BENIGN,0
+2026-11-07 07:40:00,bob.jones,192.168.1.131,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,3,BENIGN,0
+2026-11-06 11:26:00,it_support,192.168.1.167,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,9,BENIGN,0
+2026-11-06 13:05:00,alice.smith,192.168.1.132,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,15,BENIGN,0
+2026-11-06 09:08:00,bob.jones,198.51.100.21,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,9,1,1,84,SPRAY_ATTACK,1
+2026-11-02 01:57:00,carol.white,192.168.1.172,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,1,0,0,9,BENIGN,0
+2026-11-06 11:54:00,it_support,192.168.1.35,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,6,BENIGN,0
+2026-11-06 05:27:00,admin_corp,198.51.100.27,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,5,1,1,94,SPRAY_ATTACK,1
+2026-11-05 20:53:00,grace.wilson,192.168.1.90,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,11,BENIGN,0
+2026-11-03 01:41:00,admin_corp,192.168.1.222,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,11,BENIGN,0
+2026-11-02 19:32:00,it_support,192.168.1.153,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,11,BENIGN,0
+2026-11-06 03:30:00,alice.smith,10.200.39.20,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,24,OFF_HOURS,1
+2026-11-06 19:41:00,david.brown,203.0.113.45,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,9,19,1,1,88,BRUTE_FORCE,1
+2026-11-03 21:46:00,grace.wilson,203.0.113.99,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,5,21,1,1,75,BRUTE_FORCE,1
+2026-11-04 10:38:00,emma.davis,114.119.90.2,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,1,1,65,IMPOSSIBLE_TRAVEL,1
+2026-11-02 03:01:00,carol.white,192.168.1.17,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,12,BENIGN,0
+2026-11-06 02:39:00,admin_corp,192.168.1.104,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,2,BENIGN,0
+2026-11-01 22:22:00,carol.white,192.168.1.168,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,14,BENIGN,0
+2026-11-06 03:48:00,admin_corp,192.168.1.116,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,3,BENIGN,0
+2026-11-05 06:16:00,grace.wilson,192.168.1.183,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,1,BENIGN,0
+2026-11-03 20:13:00,grace.wilson,10.200.4.1,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,44,OFF_HOURS,1
+2026-11-02 21:29:00,emma.davis,192.168.1.40,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,5,BENIGN,0
+2026-11-02 19:17:00,grace.wilson,192.168.1.68,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,1,BENIGN,0
+2026-11-06 07:08:00,alice.smith,192.168.1.29,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,12,BENIGN,0
+2026-11-06 02:04:00,emma.davis,192.168.1.15,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,14,BENIGN,0
+2026-11-05 10:49:00,bob.jones,192.168.1.37,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,2,BENIGN,0
+2026-11-05 20:05:00,emma.davis,192.168.1.66,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,3,BENIGN,0
+2026-11-07 08:54:00,it_support,192.168.1.208,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,4,BENIGN,0
+2026-11-04 00:32:00,bob.jones,192.168.1.60,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,2,BENIGN,0
+2026-11-03 08:23:00,admin_corp,192.168.1.154,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,8,0,0,10,BENIGN,0
+2026-11-04 22:20:00,carol.white,192.168.1.130,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,8,BENIGN,0
+2026-11-08 01:30:00,alice.smith,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,1,BENIGN,0
+2026-11-05 12:42:00,emma.davis,192.168.1.231,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,12,BENIGN,0
+2026-11-06 14:22:00,devops_lead,192.168.1.212,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,14,0,0,6,BENIGN,0
+2026-11-04 23:48:00,devops_lead,192.168.1.48,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,10,BENIGN,0
+2026-11-02 07:02:00,it_support,192.168.1.20,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,14,BENIGN,0
+2026-11-07 07:07:00,it_support,192.168.1.103,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,10,BENIGN,0
+2026-11-08 03:16:00,alice.smith,203.0.113.83,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,10,3,1,1,73,BRUTE_FORCE,1
+2026-11-07 16:22:00,grace.wilson,192.168.1.195,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,4,BENIGN,0
+2026-11-05 07:32:00,emma.davis,10.200.45.43,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,29,OFF_HOURS,1
+2026-11-07 16:38:00,grace.wilson,192.168.1.94,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,2,BENIGN,0
+2026-11-06 03:38:00,it_support,192.168.1.102,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,3,0,0,10,BENIGN,0
+2026-11-06 20:48:00,david.brown,192.168.1.45,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,3,BENIGN,0
+2026-11-07 02:38:00,it_support,203.0.113.68,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,14,2,1,1,74,BRUTE_FORCE,1
+2026-11-08 03:06:00,grace.wilson,192.168.1.56,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,13,BENIGN,0
+2026-11-05 11:29:00,david.brown,10.200.40.19,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,37,OFF_HOURS,1
+2026-11-04 01:19:00,emma.davis,10.200.31.13,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,44,OFF_HOURS,1
+2026-11-04 12:57:00,grace.wilson,192.168.1.117,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,4,BENIGN,0
+2026-11-04 04:17:00,alice.smith,192.168.1.233,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,4,0,0,3,BENIGN,0
+2026-11-04 13:51:00,bob.jones,203.0.113.35,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,11,13,1,1,72,BRUTE_FORCE,1
+2026-11-03 20:38:00,admin_corp,198.51.100.2,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,20,1,1,81,SPRAY_ATTACK,1
+2026-11-05 20:16:00,it_support,192.168.1.108,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,10,BENIGN,0
+2026-11-02 11:04:00,frank.miller,203.0.113.18,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,12,11,1,1,92,BRUTE_FORCE,1
+2026-11-02 21:54:00,admin_corp,192.168.1.11,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,4,BENIGN,0
+2026-11-07 13:52:00,devops_lead,192.168.1.38,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,1,BENIGN,0
+2026-11-04 01:07:00,grace.wilson,192.168.1.169,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,15,BENIGN,0
+2026-11-08 02:57:00,it_support,192.168.1.141,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,13,BENIGN,0
+2026-11-01 08:26:00,devops_lead,192.168.1.156,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,2,BENIGN,0
+2026-11-07 06:57:00,frank.miller,192.168.1.144,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,6,0,0,1,BENIGN,0
+2026-11-05 17:39:00,frank.miller,192.168.1.14,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,3,BENIGN,0
+2026-11-07 22:54:00,frank.miller,192.168.1.100,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,14,BENIGN,0
+2026-11-06 18:41:00,carol.white,203.0.113.9,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,9,18,1,1,76,BRUTE_FORCE,1
+2026-11-01 19:58:00,david.brown,198.51.100.21,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,19,1,1,96,SPRAY_ATTACK,1
+2026-11-05 20:45:00,it_support,192.168.1.19,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,1,BENIGN,0
+2026-11-05 02:39:00,emma.davis,192.168.1.104,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,12,BENIGN,0
+2026-11-05 04:35:00,carol.white,192.168.1.137,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,2,BENIGN,0
+2026-11-06 03:56:00,bob.jones,192.168.1.220,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,3,BENIGN,0
+2026-11-02 05:52:00,frank.miller,192.168.1.88,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,5,BENIGN,0
+2026-11-06 09:13:00,frank.miller,192.168.1.196,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,9,0,0,8,BENIGN,0
+2026-11-01 23:40:00,bob.jones,192.168.1.113,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,5,BENIGN,0
+2026-11-01 16:31:00,carol.white,203.0.113.87,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,7,16,1,1,72,BRUTE_FORCE,1
+2026-11-04 00:27:00,frank.miller,192.168.1.155,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,14,BENIGN,0
+2026-11-05 13:18:00,frank.miller,192.168.1.29,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,10,BENIGN,0
+2026-11-04 12:07:00,david.brown,10.200.2.48,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,37,OFF_HOURS,1
+2026-11-02 16:10:00,emma.davis,203.0.113.91,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,14,16,1,1,79,BRUTE_FORCE,1
+2026-11-06 22:08:00,david.brown,192.168.1.228,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,14,BENIGN,0
+2026-11-02 07:59:00,frank.miller,192.168.1.191,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,9,BENIGN,0
+2026-11-03 03:01:00,carol.white,203.0.113.66,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,8,3,1,1,95,BRUTE_FORCE,1
+2026-11-02 21:56:00,david.brown,203.0.113.4,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,12,21,1,1,95,BRUTE_FORCE,1
+2026-11-07 14:39:00,carol.white,192.168.1.32,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,15,BENIGN,0
+2026-11-07 07:33:00,grace.wilson,203.0.113.74,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,10,7,1,1,90,BRUTE_FORCE,1
+2026-11-02 04:16:00,admin_corp,192.168.1.142,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,5,BENIGN,0
+2026-11-02 19:15:00,grace.wilson,192.168.1.232,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,9,BENIGN,0
+2026-11-03 04:58:00,carol.white,192.168.1.191,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,4,0,0,9,BENIGN,0
+2026-11-02 05:33:00,emma.davis,192.168.1.151,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,5,0,0,2,BENIGN,0
+2026-11-07 01:15:00,carol.white,192.168.1.158,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,10,BENIGN,0
+2026-11-07 17:55:00,alice.smith,203.0.113.4,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,14,17,1,1,78,BRUTE_FORCE,1
+2026-11-03 17:34:00,devops_lead,192.168.1.173,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,9,BENIGN,0
+2026-11-04 18:30:00,admin_corp,192.168.1.216,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,1,BENIGN,0
+2026-11-03 03:10:00,admin_corp,192.168.1.128,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,10,BENIGN,0
+2026-11-04 23:12:00,frank.miller,10.200.9.49,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,27,OFF_HOURS,1
+2026-11-06 15:23:00,bob.jones,192.168.1.73,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,12,BENIGN,0
+2026-11-06 02:11:00,david.brown,10.200.11.21,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,44,OFF_HOURS,1
+2026-11-03 03:31:00,admin_corp,10.200.30.32,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,22,OFF_HOURS,1
+2026-11-05 19:23:00,it_support,192.168.1.71,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,1,BENIGN,0
+2026-11-04 12:50:00,admin_corp,192.168.1.225,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,3,BENIGN,0
+2026-11-06 05:41:00,carol.white,198.51.100.47,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,5,1,1,92,SPRAY_ATTACK,1
+2026-11-05 11:56:00,alice.smith,192.168.1.155,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,11,0,0,2,BENIGN,0
+2026-11-05 17:30:00,it_support,192.168.1.150,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,3,BENIGN,0
+2026-11-02 19:09:00,bob.jones,192.168.1.213,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,19,0,0,4,BENIGN,0
+2026-11-03 14:22:00,devops_lead,192.168.1.138,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,10,BENIGN,0
+2026-11-06 17:22:00,it_support,192.168.1.165,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,17,0,0,10,BENIGN,0
+2026-11-03 04:23:00,grace.wilson,10.200.48.20,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,42,OFF_HOURS,1
+2026-11-07 17:43:00,emma.davis,192.168.1.14,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,13,BENIGN,0
+2026-11-07 23:24:00,emma.davis,203.0.113.93,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,9,23,1,1,90,BRUTE_FORCE,1
+2026-11-07 21:58:00,devops_lead,192.168.1.23,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,12,BENIGN,0
+2026-11-03 00:22:00,david.brown,192.168.1.189,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,10,BENIGN,0
+2026-11-06 02:22:00,carol.white,192.168.1.62,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,15,BENIGN,0
+2026-11-02 01:01:00,carol.white,192.168.1.153,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,12,BENIGN,0
+2026-11-04 21:41:00,carol.white,192.168.1.146,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,21,0,0,8,BENIGN,0
+2026-11-08 06:36:00,admin_corp,192.168.1.73,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,9,BENIGN,0
+2026-11-04 14:56:00,david.brown,192.168.1.135,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,8,BENIGN,0
+2026-11-04 14:36:00,bob.jones,192.168.1.149,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,4,BENIGN,0
+2026-11-04 15:19:00,alice.smith,192.168.1.192,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,15,0,0,8,BENIGN,0
+2026-11-06 18:50:00,david.brown,192.168.1.147,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,4,BENIGN,0
+2026-11-02 13:50:00,devops_lead,192.168.1.71,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,7,BENIGN,0
+2026-11-03 23:35:00,alice.smith,192.168.1.94,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,4,BENIGN,0
+2026-11-01 09:25:00,it_support,10.200.11.27,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,40,OFF_HOURS,1
+2026-11-03 14:28:00,emma.davis,192.168.1.175,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,7,BENIGN,0
+2026-11-07 10:08:00,alice.smith,114.119.45.107,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,1,1,65,IMPOSSIBLE_TRAVEL,1
+2026-11-06 23:17:00,carol.white,114.119.75.10,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,1,1,46,IMPOSSIBLE_TRAVEL,1
+2026-11-05 03:30:00,emma.davis,192.168.1.174,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,14,BENIGN,0
+2026-11-04 10:31:00,david.brown,203.0.113.43,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,9,10,1,1,92,BRUTE_FORCE,1
+2026-11-03 10:51:00,alice.smith,192.168.1.212,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,6,BENIGN,0
+2026-11-03 07:56:00,devops_lead,198.51.100.26,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,7,1,1,96,SPRAY_ATTACK,1
+2026-11-05 01:33:00,bob.jones,192.168.1.34,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,7,BENIGN,0
+2026-11-01 09:52:00,emma.davis,192.168.1.124,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,0,BENIGN,0
+2026-11-04 07:26:00,frank.miller,192.168.1.25,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,12,BENIGN,0
+2026-11-07 01:14:00,emma.davis,192.168.1.173,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,7,BENIGN,0
+2026-11-02 20:29:00,admin_corp,192.168.1.201,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,15,BENIGN,0
+2026-11-07 10:47:00,david.brown,203.0.113.88,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,13,10,1,1,92,BRUTE_FORCE,1
+2026-11-05 10:48:00,bob.jones,114.119.29.16,LOGIN_SUCCESS,"Tokyo, JP",Python-urllib/3.12,0,10,1,1,52,IMPOSSIBLE_TRAVEL,1
+2026-11-07 20:24:00,it_support,192.168.1.93,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,15,BENIGN,0
+2026-11-02 08:50:00,it_support,192.168.1.24,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,14,BENIGN,0
+2026-11-07 18:00:00,alice.smith,192.168.1.182,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,8,BENIGN,0
+2026-11-01 08:50:00,david.brown,192.168.1.21,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,1,BENIGN,0
+2026-11-02 02:51:00,admin_corp,192.168.1.114,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,13,BENIGN,0
+2026-11-05 14:16:00,grace.wilson,192.168.1.244,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,4,BENIGN,0
+2026-11-05 06:58:00,bob.jones,192.168.1.147,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,7,BENIGN,0
+2026-11-01 08:57:00,alice.smith,10.200.30.44,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,27,OFF_HOURS,1
+2026-11-04 03:36:00,admin_corp,192.168.1.80,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,1,BENIGN,0
+2026-11-06 02:29:00,devops_lead,203.0.113.3,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,6,2,1,1,73,BRUTE_FORCE,1
+2026-11-08 02:12:00,alice.smith,192.168.1.182,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,12,BENIGN,0
+2026-11-06 07:52:00,david.brown,192.168.1.203,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,9,BENIGN,0
+2026-11-03 23:57:00,devops_lead,192.168.1.163,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,4,BENIGN,0
+2026-11-07 06:21:00,david.brown,192.168.1.80,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,6,0,0,5,BENIGN,0
+2026-11-06 04:40:00,it_support,192.168.1.98,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,13,BENIGN,0
+2026-11-05 23:29:00,carol.white,192.168.1.57,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,9,BENIGN,0
+2026-11-02 23:26:00,admin_corp,114.119.144.106,LOGIN_SUCCESS,"Singapore, SG",Python-urllib/3.12,0,23,1,1,73,IMPOSSIBLE_TRAVEL,1
+2026-11-02 20:37:00,grace.wilson,192.168.1.62,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,14,BENIGN,0
+2026-11-05 13:20:00,bob.jones,192.168.1.222,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,1,BENIGN,0
+2026-11-02 03:53:00,david.brown,203.0.113.76,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,8,3,1,1,80,BRUTE_FORCE,1
+2026-11-04 18:48:00,alice.smith,192.168.1.58,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,18,0,0,15,BENIGN,0
+2026-11-04 02:15:00,devops_lead,192.168.1.111,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,9,BENIGN,0
+2026-11-05 15:57:00,admin_corp,192.168.1.101,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,15,BENIGN,0
+2026-11-06 15:16:00,bob.jones,203.0.113.93,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,8,15,1,1,81,BRUTE_FORCE,1
+2026-11-04 21:27:00,grace.wilson,192.168.1.231,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,21,0,0,8,BENIGN,0
+2026-11-07 15:06:00,devops_lead,192.168.1.116,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,7,BENIGN,0
+2026-11-05 15:44:00,devops_lead,203.0.113.64,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,12,15,1,1,93,BRUTE_FORCE,1
+2026-11-06 21:58:00,admin_corp,192.168.1.213,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,15,BENIGN,0
+2026-11-03 10:16:00,it_support,10.200.4.34,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,44,OFF_HOURS,1
+2026-11-01 09:45:00,grace.wilson,192.168.1.171,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,0,BENIGN,0
+2026-11-03 19:44:00,it_support,192.168.1.25,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,0,BENIGN,0
+2026-11-07 09:20:00,it_support,192.168.1.14,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,9,0,0,0,BENIGN,0
+2026-11-07 01:09:00,grace.wilson,203.0.113.23,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,13,1,1,1,74,BRUTE_FORCE,1
+2026-11-04 01:49:00,david.brown,192.168.1.74,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,2,BENIGN,0
+2026-11-05 13:53:00,grace.wilson,192.168.1.72,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,2,BENIGN,0
+2026-11-01 16:40:00,bob.jones,192.168.1.106,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,5,BENIGN,0
+2026-11-02 06:35:00,admin_corp,203.0.113.83,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,13,6,1,1,71,BRUTE_FORCE,1
+2026-11-03 22:45:00,david.brown,198.51.100.45,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,22,1,1,95,SPRAY_ATTACK,1
+2026-11-04 10:02:00,alice.smith,114.119.176.72,LOGIN_SUCCESS,"Tokyo, JP",Python-urllib/3.12,0,10,1,1,42,IMPOSSIBLE_TRAVEL,1
+2026-11-03 08:59:00,frank.miller,192.168.1.63,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,2,BENIGN,0
+2026-11-04 17:44:00,carol.white,192.168.1.155,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,10,BENIGN,0
+2026-11-05 16:49:00,carol.white,203.0.113.89,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,5,16,1,1,73,BRUTE_FORCE,1
+2026-11-06 07:22:00,david.brown,203.0.113.44,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,5,7,1,1,90,BRUTE_FORCE,1
+2026-11-04 10:39:00,admin_corp,192.168.1.101,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,12,BENIGN,0
+2026-11-02 07:25:00,devops_lead,192.168.1.73,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,12,BENIGN,0
+2026-11-03 02:08:00,grace.wilson,192.168.1.37,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,2,0,0,14,BENIGN,0
+2026-11-05 10:17:00,emma.davis,192.168.1.32,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,13,BENIGN,0
+2026-11-02 12:13:00,alice.smith,192.168.1.151,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,10,BENIGN,0
+2026-11-05 17:12:00,alice.smith,192.168.1.109,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,17,0,0,7,BENIGN,0
+2026-11-07 20:11:00,it_support,192.168.1.107,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,8,BENIGN,0
+2026-11-06 22:40:00,carol.white,192.168.1.121,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,2,BENIGN,0
+2026-11-05 10:37:00,emma.davis,114.119.185.161,LOGIN_SUCCESS,"Singapore, SG",Python-urllib/3.12,0,10,1,1,52,IMPOSSIBLE_TRAVEL,1
+2026-11-06 13:02:00,bob.jones,192.168.1.11,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,12,BENIGN,0
+2026-11-05 02:00:00,admin_corp,192.168.1.218,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,6,BENIGN,0
+2026-11-06 18:49:00,frank.miller,192.168.1.111,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,15,BENIGN,0
+2026-11-07 21:16:00,david.brown,192.168.1.81,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,6,BENIGN,0
+2026-11-08 01:44:00,it_support,192.168.1.206,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,6,BENIGN,0
+2026-11-06 07:44:00,emma.davis,203.0.113.9,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,7,7,1,1,90,BRUTE_FORCE,1
+2026-11-04 18:42:00,david.brown,192.168.1.49,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,15,BENIGN,0
+2026-11-07 23:00:00,grace.wilson,192.168.1.246,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,11,BENIGN,0
+2026-11-07 10:37:00,devops_lead,192.168.1.31,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,11,BENIGN,0
+2026-11-03 05:26:00,devops_lead,192.168.1.175,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,5,0,0,13,BENIGN,0
+2026-11-02 12:56:00,alice.smith,192.168.1.66,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,14,BENIGN,0
+2026-11-08 00:44:00,it_support,192.168.1.16,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,2,BENIGN,0
+2026-11-02 15:42:00,carol.white,192.168.1.97,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,11,BENIGN,0
+2026-11-06 18:02:00,bob.jones,192.168.1.188,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,1,BENIGN,0
+2026-11-02 15:26:00,alice.smith,203.0.113.83,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,8,15,1,1,86,BRUTE_FORCE,1
+2026-11-03 07:39:00,it_support,192.168.1.153,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,12,BENIGN,0
+2026-11-03 10:23:00,carol.white,192.168.1.120,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,6,BENIGN,0
+2026-11-06 10:46:00,devops_lead,192.168.1.11,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,2,BENIGN,0
+2026-11-07 21:40:00,bob.jones,203.0.113.69,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,10,21,1,1,76,BRUTE_FORCE,1
+2026-11-06 12:57:00,bob.jones,192.168.1.230,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,12,0,0,10,BENIGN,0
+2026-11-08 03:01:00,grace.wilson,192.168.1.160,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,14,BENIGN,0
+2026-11-03 07:07:00,emma.davis,114.119.152.22,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,1,1,60,IMPOSSIBLE_TRAVEL,1
+2026-11-02 16:12:00,david.brown,192.168.1.56,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,12,BENIGN,0
+2026-11-06 02:13:00,devops_lead,192.168.1.108,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,5,BENIGN,0
+2026-11-07 15:32:00,carol.white,192.168.1.45,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,1,BENIGN,0
+2026-11-05 10:03:00,alice.smith,192.168.1.59,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,15,BENIGN,0
+2026-11-05 23:44:00,admin_corp,192.168.1.225,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,0,BENIGN,0
+2026-11-03 20:14:00,emma.davis,192.168.1.67,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,15,BENIGN,0
+2026-11-07 14:07:00,it_support,192.168.1.39,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,11,BENIGN,0
+2026-11-07 12:01:00,alice.smith,203.0.113.57,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,6,12,1,1,93,BRUTE_FORCE,1
+2026-11-04 03:36:00,emma.davis,198.51.100.3,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,3,1,1,88,SPRAY_ATTACK,1
+2026-11-05 07:12:00,bob.jones,192.168.1.40,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,11,BENIGN,0
+2026-11-08 06:39:00,grace.wilson,192.168.1.45,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,11,BENIGN,0
+2026-11-07 09:21:00,emma.davis,192.168.1.53,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,9,0,0,8,BENIGN,0
+2026-11-07 04:29:00,bob.jones,192.168.1.202,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,4,0,0,4,BENIGN,0
+2026-11-02 20:15:00,david.brown,192.168.1.92,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,4,BENIGN,0
+2026-11-07 21:41:00,emma.davis,192.168.1.106,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,2,BENIGN,0
+2026-11-05 22:01:00,it_support,192.168.1.187,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,22,0,0,10,BENIGN,0
+2026-11-07 22:55:00,alice.smith,198.51.100.47,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,22,1,1,94,SPRAY_ATTACK,1
+2026-11-05 09:50:00,bob.jones,203.0.113.51,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,8,9,1,1,85,BRUTE_FORCE,1
+2026-11-04 09:20:00,frank.miller,203.0.113.44,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,10,9,1,1,91,BRUTE_FORCE,1
+2026-11-01 21:14:00,alice.smith,192.168.1.210,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,5,BENIGN,0
+2026-11-06 08:31:00,admin_corp,192.168.1.119,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,8,0,0,9,BENIGN,0
+2026-11-03 03:25:00,emma.davis,192.168.1.102,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,5,BENIGN,0
+2026-11-01 22:09:00,grace.wilson,192.168.1.195,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,3,BENIGN,0
+2026-11-01 08:18:00,david.brown,192.168.1.43,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,0,BENIGN,0
+2026-11-01 10:13:00,frank.miller,203.0.113.55,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,6,10,1,1,77,BRUTE_FORCE,1
+2026-11-05 16:37:00,bob.jones,192.168.1.36,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,9,BENIGN,0
+2026-11-02 21:27:00,grace.wilson,203.0.113.97,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,6,21,1,1,86,BRUTE_FORCE,1
+2026-11-07 17:49:00,alice.smith,192.168.1.52,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,4,BENIGN,0
+2026-11-06 00:26:00,devops_lead,192.168.1.230,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,4,BENIGN,0
+2026-11-02 17:38:00,devops_lead,192.168.1.99,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,7,BENIGN,0
+2026-11-04 11:38:00,bob.jones,192.168.1.163,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,9,BENIGN,0
+2026-11-03 16:07:00,it_support,192.168.1.58,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,7,BENIGN,0
+2026-11-06 23:09:00,grace.wilson,192.168.1.137,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,0,BENIGN,0
+2026-11-05 10:37:00,frank.miller,192.168.1.230,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,5,BENIGN,0
+2026-11-06 16:38:00,bob.jones,192.168.1.27,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,1,BENIGN,0
+2026-11-05 20:41:00,it_support,192.168.1.192,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,2,BENIGN,0
+2026-11-07 10:32:00,it_support,192.168.1.81,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,6,BENIGN,0
+2026-11-03 02:26:00,it_support,192.168.1.160,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,7,BENIGN,0
+2026-11-01 23:49:00,david.brown,192.168.1.121,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,1,BENIGN,0
+2026-11-04 20:28:00,carol.white,192.168.1.191,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,15,BENIGN,0
+2026-11-05 06:41:00,it_support,192.168.1.220,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,8,BENIGN,0
+2026-11-02 16:15:00,alice.smith,192.168.1.119,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,2,BENIGN,0
+2026-11-06 23:29:00,admin_corp,192.168.1.24,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,5,BENIGN,0
+2026-11-04 05:40:00,bob.jones,198.51.100.44,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,5,1,1,83,SPRAY_ATTACK,1
+2026-11-03 22:23:00,it_support,192.168.1.229,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,11,BENIGN,0
+2026-11-05 16:35:00,carol.white,192.168.1.229,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,13,BENIGN,0
+2026-11-03 21:19:00,frank.miller,192.168.1.244,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,11,BENIGN,0
+2026-11-02 16:37:00,it_support,192.168.1.23,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,1,BENIGN,0
+2026-11-05 21:29:00,bob.jones,198.51.100.19,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,21,1,1,90,SPRAY_ATTACK,1
+2026-11-02 07:36:00,it_support,192.168.1.104,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,9,BENIGN,0
+2026-11-04 02:15:00,admin_corp,192.168.1.136,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,2,0,0,7,BENIGN,0
+2026-11-03 01:07:00,alice.smith,114.119.7.60,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,1,1,40,IMPOSSIBLE_TRAVEL,1
+2026-11-05 03:29:00,alice.smith,203.0.113.49,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,8,3,1,1,86,BRUTE_FORCE,1
+2026-11-04 01:03:00,grace.wilson,192.168.1.25,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,1,BENIGN,0
+2026-11-03 23:13:00,it_support,192.168.1.239,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,23,0,0,2,BENIGN,0
+2026-11-07 22:36:00,bob.jones,192.168.1.173,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,1,BENIGN,0
+2026-11-06 06:47:00,carol.white,192.168.1.76,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,6,0,0,10,BENIGN,0
+2026-11-04 22:52:00,admin_corp,192.168.1.29,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,3,BENIGN,0
+2026-11-03 02:27:00,bob.jones,192.168.1.129,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,11,BENIGN,0
+2026-11-03 16:42:00,admin_corp,192.168.1.77,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,9,BENIGN,0
+2026-11-08 04:45:00,alice.smith,192.168.1.229,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,7,BENIGN,0
+2026-11-05 09:09:00,grace.wilson,192.168.1.183,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,5,BENIGN,0
+2026-11-01 16:30:00,grace.wilson,198.51.100.36,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,16,1,1,97,SPRAY_ATTACK,1
+2026-11-04 04:14:00,bob.jones,192.168.1.215,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,7,BENIGN,0
+2026-11-02 19:42:00,david.brown,203.0.113.48,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,6,19,1,1,70,BRUTE_FORCE,1
+2026-11-02 01:37:00,david.brown,198.51.100.29,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,1,1,1,82,SPRAY_ATTACK,1
+2026-11-05 02:33:00,bob.jones,192.168.1.128,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,2,0,0,13,BENIGN,0
+2026-11-05 19:52:00,admin_corp,192.168.1.184,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,5,BENIGN,0
+2026-11-04 11:06:00,emma.davis,192.168.1.48,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,7,BENIGN,0
+2026-11-04 16:36:00,admin_corp,192.168.1.150,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,12,BENIGN,0
+2026-11-02 21:29:00,grace.wilson,192.168.1.236,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,21,0,0,0,BENIGN,0
+2026-11-05 16:27:00,frank.miller,192.168.1.210,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,16,0,0,10,BENIGN,0
+2026-11-05 18:04:00,emma.davis,192.168.1.91,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,8,BENIGN,0
+2026-11-02 00:00:00,admin_corp,192.168.1.206,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,7,BENIGN,0
+2026-11-04 08:47:00,it_support,203.0.113.95,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,14,8,1,1,95,BRUTE_FORCE,1
+2026-11-05 18:04:00,frank.miller,114.119.45.46,LOGIN_SUCCESS,"Sydney, AU",Python-urllib/3.12,0,18,1,1,60,IMPOSSIBLE_TRAVEL,1
+2026-11-05 09:59:00,devops_lead,192.168.1.189,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,9,0,0,6,BENIGN,0
+2026-11-06 22:25:00,it_support,192.168.1.135,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,7,BENIGN,0
+2026-11-01 13:27:00,it_support,192.168.1.94,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,5,BENIGN,0
+2026-11-05 00:22:00,alice.smith,192.168.1.160,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,11,BENIGN,0
+2026-11-02 03:49:00,frank.miller,192.168.1.179,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,9,BENIGN,0
+2026-11-05 00:06:00,carol.white,10.200.47.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,25,OFF_HOURS,1
+2026-11-07 17:28:00,devops_lead,203.0.113.29,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,9,17,1,1,93,BRUTE_FORCE,1
+2026-11-04 16:26:00,carol.white,192.168.1.10,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,10,BENIGN,0
+2026-11-03 20:20:00,devops_lead,192.168.1.137,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,7,BENIGN,0
+2026-11-05 06:43:00,frank.miller,192.168.1.236,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,10,BENIGN,0
+2026-11-06 09:58:00,alice.smith,192.168.1.73,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,3,BENIGN,0
+2026-11-01 08:21:00,alice.smith,192.168.1.197,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,15,BENIGN,0
+2026-11-05 15:25:00,frank.miller,192.168.1.35,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,7,BENIGN,0
+2026-11-03 04:25:00,admin_corp,192.168.1.226,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,8,BENIGN,0
+2026-11-02 12:36:00,bob.jones,192.168.1.237,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,2,BENIGN,0
+2026-11-05 04:17:00,devops_lead,10.200.31.46,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,39,OFF_HOURS,1
+2026-11-06 06:34:00,carol.white,192.168.1.94,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,8,BENIGN,0
+2026-11-04 12:53:00,emma.davis,192.168.1.22,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,15,BENIGN,0
+2026-11-03 01:57:00,alice.smith,192.168.1.119,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,15,BENIGN,0
+2026-11-03 14:32:00,bob.jones,192.168.1.53,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,3,BENIGN,0
+2026-11-04 20:13:00,grace.wilson,192.168.1.239,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,12,BENIGN,0
+2026-11-03 10:30:00,frank.miller,198.51.100.24,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,10,1,1,94,SPRAY_ATTACK,1
+2026-11-01 20:12:00,emma.davis,192.168.1.77,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,4,BENIGN,0
+2026-11-02 10:25:00,bob.jones,192.168.1.216,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,1,BENIGN,0
+2026-11-05 17:43:00,it_support,192.168.1.147,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,15,BENIGN,0
+2026-11-04 17:37:00,bob.jones,192.168.1.228,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,4,BENIGN,0
+2026-11-02 16:51:00,admin_corp,192.168.1.52,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,13,BENIGN,0
+2026-11-02 05:24:00,grace.wilson,192.168.1.220,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,2,BENIGN,0
+2026-11-02 07:46:00,grace.wilson,192.168.1.151,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,0,BENIGN,0
+2026-11-08 00:27:00,it_support,203.0.113.15,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,7,0,1,1,88,BRUTE_FORCE,1
+2026-11-08 00:33:00,devops_lead,203.0.113.13,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,9,0,1,1,87,BRUTE_FORCE,1
+2026-11-05 05:54:00,grace.wilson,192.168.1.177,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,1,BENIGN,0
+2026-11-03 07:02:00,emma.davis,192.168.1.168,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,10,BENIGN,0
+2026-11-04 00:53:00,alice.smith,192.168.1.245,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,9,BENIGN,0
+2026-11-04 20:55:00,emma.davis,203.0.113.90,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,7,20,1,1,79,BRUTE_FORCE,1
+2026-11-06 09:00:00,frank.miller,192.168.1.116,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,13,BENIGN,0
+2026-11-06 20:18:00,it_support,198.51.100.4,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,20,1,1,85,SPRAY_ATTACK,1
+2026-11-02 01:56:00,emma.davis,192.168.1.113,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,0,BENIGN,0
+2026-11-03 07:27:00,david.brown,198.51.100.13,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,7,1,1,87,SPRAY_ATTACK,1
+2026-11-01 17:02:00,admin_corp,192.168.1.102,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,14,BENIGN,0
+2026-11-07 01:56:00,grace.wilson,192.168.1.41,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,14,BENIGN,0
+2026-11-03 08:30:00,admin_corp,192.168.1.99,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,8,BENIGN,0
+2026-11-02 08:41:00,emma.davis,192.168.1.22,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,6,BENIGN,0
+2026-11-03 20:27:00,david.brown,192.168.1.78,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,0,BENIGN,0
+2026-11-06 17:28:00,carol.white,192.168.1.163,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,9,BENIGN,0
+2026-11-04 11:12:00,grace.wilson,198.51.100.23,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,11,1,1,88,SPRAY_ATTACK,1
+2026-11-03 19:36:00,admin_corp,192.168.1.143,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,11,BENIGN,0
+2026-11-07 17:19:00,devops_lead,192.168.1.86,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,8,BENIGN,0
+2026-11-05 00:48:00,emma.davis,192.168.1.192,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,7,BENIGN,0
+2026-11-01 23:31:00,devops_lead,192.168.1.91,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,15,BENIGN,0
+2026-11-04 16:44:00,emma.davis,198.51.100.26,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,16,1,1,81,SPRAY_ATTACK,1
+2026-11-07 23:13:00,devops_lead,203.0.113.44,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,10,23,1,1,86,BRUTE_FORCE,1
+2026-11-04 17:59:00,carol.white,203.0.113.72,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,6,17,1,1,85,BRUTE_FORCE,1
+2026-11-02 18:57:00,emma.davis,192.168.1.153,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,2,BENIGN,0
+2026-11-03 20:42:00,frank.miller,192.168.1.233,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,10,BENIGN,0
+2026-11-05 13:30:00,emma.davis,192.168.1.128,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,2,BENIGN,0
+2026-11-06 16:57:00,david.brown,192.168.1.232,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,1,BENIGN,0
+2026-11-03 01:11:00,carol.white,10.200.22.27,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,30,OFF_HOURS,1
+2026-11-03 09:15:00,bob.jones,192.168.1.171,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,0,BENIGN,0
+2026-11-06 11:27:00,emma.davis,192.168.1.208,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,15,BENIGN,0
+2026-11-02 08:03:00,carol.white,192.168.1.172,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,15,BENIGN,0
+2026-11-05 16:41:00,alice.smith,192.168.1.61,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,6,BENIGN,0
+2026-11-01 12:54:00,alice.smith,192.168.1.73,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,9,BENIGN,0
+2026-11-02 19:13:00,bob.jones,192.168.1.160,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,1,BENIGN,0
+2026-11-04 17:26:00,emma.davis,192.168.1.143,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,4,BENIGN,0
+2026-11-05 05:36:00,admin_corp,192.168.1.58,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,7,BENIGN,0
+2026-11-02 19:50:00,david.brown,192.168.1.160,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,1,BENIGN,0
+2026-11-05 14:28:00,emma.davis,203.0.113.80,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,6,14,1,1,90,BRUTE_FORCE,1
+2026-11-01 13:24:00,alice.smith,192.168.1.116,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,8,BENIGN,0
+2026-11-06 17:33:00,carol.white,192.168.1.185,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,3,BENIGN,0
+2026-11-07 06:05:00,emma.davis,192.168.1.189,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,6,0,0,3,BENIGN,0
+2026-11-07 03:42:00,devops_lead,192.168.1.39,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,6,BENIGN,0
+2026-11-04 07:49:00,it_support,10.200.23.46,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,21,OFF_HOURS,1
+2026-11-07 13:41:00,admin_corp,114.119.177.124,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,1,1,40,IMPOSSIBLE_TRAVEL,1
+2026-11-01 11:29:00,bob.jones,198.51.100.37,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,11,1,1,95,SPRAY_ATTACK,1
+2026-11-03 00:44:00,bob.jones,203.0.113.10,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,8,0,1,1,84,BRUTE_FORCE,1
+2026-11-04 16:51:00,emma.davis,192.168.1.35,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,11,BENIGN,0
+2026-11-04 21:24:00,grace.wilson,192.168.1.34,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,5,BENIGN,0
+2026-11-05 01:45:00,frank.miller,198.51.100.40,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,1,1,1,82,SPRAY_ATTACK,1
+2026-11-05 13:46:00,frank.miller,192.168.1.112,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,12,BENIGN,0
+2026-11-06 18:36:00,grace.wilson,192.168.1.214,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,1,BENIGN,0
+2026-11-03 03:32:00,bob.jones,192.168.1.161,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,5,BENIGN,0
+2026-11-05 15:42:00,frank.miller,192.168.1.230,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,15,0,0,3,BENIGN,0
+2026-11-06 00:19:00,admin_corp,192.168.1.76,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,7,BENIGN,0
+2026-11-05 04:23:00,it_support,192.168.1.189,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,7,BENIGN,0
+2026-11-06 19:36:00,frank.miller,192.168.1.174,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,1,BENIGN,0
+2026-11-01 11:11:00,carol.white,192.168.1.130,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,15,BENIGN,0
+2026-11-04 23:34:00,david.brown,192.168.1.81,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,12,BENIGN,0
+2026-11-05 22:08:00,david.brown,192.168.1.123,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,14,BENIGN,0
+2026-11-04 22:19:00,bob.jones,10.200.48.42,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,33,OFF_HOURS,1
+2026-11-01 17:48:00,it_support,192.168.1.221,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,17,0,0,9,BENIGN,0
+2026-11-07 02:49:00,it_support,192.168.1.181,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,1,BENIGN,0
+2026-11-03 20:53:00,admin_corp,192.168.1.206,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,14,BENIGN,0
+2026-11-02 15:09:00,bob.jones,203.0.113.29,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,10,15,1,1,90,BRUTE_FORCE,1
+2026-11-04 15:44:00,it_support,192.168.1.189,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,15,BENIGN,0
+2026-11-02 22:22:00,grace.wilson,192.168.1.166,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,12,BENIGN,0
+2026-11-03 18:53:00,admin_corp,203.0.113.25,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,11,18,1,1,71,BRUTE_FORCE,1
+2026-11-08 00:48:00,bob.jones,203.0.113.58,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,12,0,1,1,70,BRUTE_FORCE,1
+2026-11-07 08:50:00,alice.smith,192.168.1.120,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,5,BENIGN,0
+2026-11-07 22:00:00,carol.white,192.168.1.42,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,10,BENIGN,0
+2026-11-07 01:40:00,grace.wilson,192.168.1.165,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,10,BENIGN,0
+2026-11-04 16:20:00,admin_corp,203.0.113.18,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,13,16,1,1,80,BRUTE_FORCE,1
+2026-11-07 15:10:00,david.brown,192.168.1.169,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,4,BENIGN,0
+2026-11-03 08:34:00,it_support,192.168.1.173,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,11,BENIGN,0
+2026-11-07 17:33:00,admin_corp,192.168.1.180,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,9,BENIGN,0
+2026-11-06 03:21:00,alice.smith,192.168.1.16,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,1,BENIGN,0
+2026-11-03 14:36:00,emma.davis,203.0.113.21,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,7,14,1,1,71,BRUTE_FORCE,1
+2026-11-04 16:36:00,david.brown,203.0.113.5,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,6,16,1,1,89,BRUTE_FORCE,1
+2026-11-07 17:26:00,david.brown,192.168.1.153,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,9,BENIGN,0
+2026-11-01 20:50:00,grace.wilson,192.168.1.211,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,8,BENIGN,0
+2026-11-03 15:28:00,devops_lead,198.51.100.29,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,15,1,1,91,SPRAY_ATTACK,1
+2026-11-08 00:41:00,it_support,192.168.1.60,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,2,BENIGN,0
+2026-11-03 11:04:00,carol.white,192.168.1.40,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,8,BENIGN,0
+2026-11-02 19:32:00,carol.white,192.168.1.75,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,4,BENIGN,0
+2026-11-01 18:55:00,carol.white,114.119.153.14,LOGIN_SUCCESS,"Tokyo, JP",Python-urllib/3.12,0,18,1,1,59,IMPOSSIBLE_TRAVEL,1
+2026-11-06 21:58:00,devops_lead,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,21,0,0,5,BENIGN,0
+2026-11-07 06:10:00,bob.jones,203.0.113.21,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,6,6,1,1,81,BRUTE_FORCE,1
+2026-11-03 20:25:00,david.brown,192.168.1.94,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,15,BENIGN,0
+2026-11-07 17:17:00,alice.smith,192.168.1.98,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,17,0,0,7,BENIGN,0
+2026-11-01 18:54:00,frank.miller,192.168.1.213,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,9,BENIGN,0
+2026-11-01 14:45:00,it_support,203.0.113.48,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,5,14,1,1,79,BRUTE_FORCE,1
+2026-11-03 12:35:00,frank.miller,192.168.1.34,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,2,BENIGN,0
+2026-11-03 17:34:00,david.brown,198.51.100.28,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,17,1,1,86,SPRAY_ATTACK,1
+2026-11-07 10:51:00,grace.wilson,192.168.1.250,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,0,BENIGN,0
+2026-11-06 13:24:00,frank.miller,192.168.1.28,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,2,BENIGN,0
+2026-11-07 21:01:00,david.brown,114.119.105.100,LOGIN_SUCCESS,"Singapore, SG",curl/7.88.1,0,21,1,1,67,IMPOSSIBLE_TRAVEL,1
+2026-11-04 22:24:00,alice.smith,192.168.1.40,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,2,BENIGN,0
+2026-11-07 23:55:00,alice.smith,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,9,BENIGN,0
+2026-11-08 05:38:00,bob.jones,192.168.1.247,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,0,BENIGN,0
+2026-11-06 17:26:00,carol.white,192.168.1.44,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,4,BENIGN,0
+2026-11-04 17:24:00,frank.miller,114.119.3.142,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,1,1,47,IMPOSSIBLE_TRAVEL,1
+2026-11-01 19:25:00,alice.smith,192.168.1.110,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,11,BENIGN,0
+2026-11-03 17:50:00,grace.wilson,198.51.100.33,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,17,1,1,85,SPRAY_ATTACK,1
+2026-11-03 10:15:00,david.brown,192.168.1.74,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,1,BENIGN,0
+2026-11-07 13:53:00,admin_corp,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,3,BENIGN,0
+2026-11-03 13:55:00,devops_lead,192.168.1.94,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,7,BENIGN,0
+2026-11-02 11:20:00,emma.davis,192.168.1.240,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,11,0,0,10,BENIGN,0
+2026-11-04 19:29:00,devops_lead,192.168.1.155,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,19,0,0,5,BENIGN,0
+2026-11-01 09:20:00,frank.miller,192.168.1.66,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,4,BENIGN,0
+2026-11-05 02:33:00,admin_corp,192.168.1.101,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,5,BENIGN,0
+2026-11-08 05:39:00,bob.jones,203.0.113.18,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,6,5,1,1,93,BRUTE_FORCE,1
+2026-11-02 04:36:00,alice.smith,203.0.113.81,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,14,4,1,1,76,BRUTE_FORCE,1
+2026-11-01 18:01:00,it_support,192.168.1.238,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,11,BENIGN,0
+2026-11-05 19:11:00,david.brown,198.51.100.38,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,19,1,1,89,SPRAY_ATTACK,1
+2026-11-02 20:34:00,admin_corp,192.168.1.33,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,7,BENIGN,0
+2026-11-03 05:18:00,it_support,192.168.1.50,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,5,0,0,4,BENIGN,0
+2026-11-06 20:02:00,frank.miller,192.168.1.204,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,11,BENIGN,0
+2026-11-03 23:55:00,alice.smith,192.168.1.142,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,14,BENIGN,0
+2026-11-01 20:41:00,alice.smith,10.200.21.7,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,38,OFF_HOURS,1
+2026-11-07 12:39:00,devops_lead,192.168.1.177,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,2,BENIGN,0
+2026-11-07 05:06:00,emma.davis,192.168.1.242,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,11,BENIGN,0
+2026-11-06 20:57:00,admin_corp,198.51.100.1,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,20,1,1,84,SPRAY_ATTACK,1
+2026-11-06 08:08:00,carol.white,192.168.1.141,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,5,BENIGN,0
+2026-11-05 10:55:00,devops_lead,192.168.1.40,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,3,BENIGN,0
+2026-11-06 19:30:00,admin_corp,192.168.1.161,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,0,BENIGN,0
+2026-11-04 02:33:00,alice.smith,192.168.1.161,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,1,BENIGN,0
+2026-11-07 20:17:00,carol.white,192.168.1.76,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,20,0,0,0,BENIGN,0
+2026-11-04 13:25:00,bob.jones,192.168.1.165,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,13,BENIGN,0
+2026-11-08 04:05:00,carol.white,203.0.113.99,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,7,4,1,1,93,BRUTE_FORCE,1
+2026-11-05 05:35:00,admin_corp,192.168.1.27,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,3,BENIGN,0
+2026-11-01 12:32:00,david.brown,192.168.1.242,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,5,BENIGN,0
+2026-11-06 17:57:00,devops_lead,192.168.1.234,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,4,BENIGN,0
+2026-11-08 04:48:00,it_support,203.0.113.87,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,10,4,1,1,71,BRUTE_FORCE,1
+2026-11-07 08:41:00,grace.wilson,192.168.1.215,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,3,BENIGN,0
+2026-11-06 04:12:00,carol.white,192.168.1.206,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,13,BENIGN,0
+2026-11-04 06:24:00,david.brown,192.168.1.200,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,0,BENIGN,0
+2026-11-05 14:25:00,david.brown,192.168.1.90,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,13,BENIGN,0
+2026-11-07 23:51:00,emma.davis,192.168.1.147,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,8,BENIGN,0
+2026-11-05 20:32:00,david.brown,192.168.1.210,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,15,BENIGN,0
+2026-11-04 05:18:00,emma.davis,192.168.1.208,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,3,BENIGN,0
+2026-11-03 22:45:00,admin_corp,203.0.113.21,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,13,22,1,1,82,BRUTE_FORCE,1
+2026-11-05 04:25:00,it_support,192.168.1.185,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,0,BENIGN,0
+2026-11-02 08:53:00,carol.white,192.168.1.163,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,7,BENIGN,0
+2026-11-05 13:16:00,bob.jones,192.168.1.195,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,9,BENIGN,0
+2026-11-08 03:09:00,alice.smith,114.119.45.164,LOGIN_SUCCESS,"Singapore, SG",curl/7.88.1,0,3,1,1,40,IMPOSSIBLE_TRAVEL,1
+2026-11-03 15:05:00,it_support,192.168.1.18,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,1,BENIGN,0
+2026-11-05 10:14:00,david.brown,192.168.1.50,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,11,BENIGN,0
+2026-11-05 19:55:00,grace.wilson,192.168.1.142,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,2,BENIGN,0
+2026-11-07 14:05:00,emma.davis,192.168.1.153,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,14,0,0,8,BENIGN,0
+2026-11-03 21:48:00,devops_lead,10.200.30.26,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,25,OFF_HOURS,1
+2026-11-05 23:11:00,it_support,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,23,0,0,8,BENIGN,0
+2026-11-07 10:54:00,devops_lead,192.168.1.123,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,7,BENIGN,0
+2026-11-05 04:46:00,admin_corp,192.168.1.239,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,2,BENIGN,0
+2026-11-05 16:30:00,david.brown,192.168.1.68,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,16,0,0,0,BENIGN,0
+2026-11-04 07:55:00,david.brown,192.168.1.112,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,5,BENIGN,0
+2026-11-06 18:08:00,frank.miller,192.168.1.238,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,18,0,0,6,BENIGN,0
+2026-11-07 00:16:00,david.brown,192.168.1.71,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,7,BENIGN,0
+2026-11-05 09:14:00,carol.white,203.0.113.16,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,14,9,1,1,70,BRUTE_FORCE,1
+2026-11-07 11:52:00,alice.smith,203.0.113.48,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,14,11,1,1,78,BRUTE_FORCE,1
+2026-11-06 22:02:00,carol.white,10.200.33.18,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,21,OFF_HOURS,1
+2026-11-07 07:34:00,grace.wilson,192.168.1.148,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,5,BENIGN,0
+2026-11-06 12:51:00,bob.jones,192.168.1.127,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,6,BENIGN,0
+2026-11-05 15:37:00,devops_lead,192.168.1.102,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,7,BENIGN,0
+2026-11-04 09:34:00,admin_corp,114.119.88.94,LOGIN_SUCCESS,"Sydney, AU",curl/7.88.1,0,9,1,1,67,IMPOSSIBLE_TRAVEL,1
+2026-11-03 17:30:00,grace.wilson,192.168.1.105,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,5,BENIGN,0
+2026-11-07 20:02:00,carol.white,10.200.44.15,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,37,OFF_HOURS,1
+2026-11-06 06:02:00,grace.wilson,192.168.1.214,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,6,0,0,5,BENIGN,0
+2026-11-06 03:07:00,admin_corp,192.168.1.238,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,1,BENIGN,0
+2026-11-05 20:48:00,bob.jones,192.168.1.25,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,3,BENIGN,0
+2026-11-06 10:51:00,frank.miller,192.168.1.102,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,3,BENIGN,0
+2026-11-05 07:53:00,devops_lead,192.168.1.157,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,15,BENIGN,0
+2026-11-06 10:03:00,bob.jones,192.168.1.83,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,10,0,0,5,BENIGN,0
+2026-11-05 04:08:00,grace.wilson,192.168.1.156,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,10,BENIGN,0
+2026-11-03 22:20:00,frank.miller,192.168.1.84,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,8,BENIGN,0
+2026-11-06 09:30:00,frank.miller,192.168.1.143,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,0,BENIGN,0
+2026-11-02 18:09:00,david.brown,192.168.1.250,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,3,BENIGN,0
+2026-11-02 10:06:00,bob.jones,114.119.122.141,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,1,1,65,IMPOSSIBLE_TRAVEL,1
+2026-11-07 07:05:00,bob.jones,192.168.1.168,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,12,BENIGN,0
+2026-11-04 20:29:00,david.brown,192.168.1.82,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,5,BENIGN,0
+2026-11-01 15:49:00,alice.smith,192.168.1.230,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,8,BENIGN,0
+2026-11-07 13:48:00,admin_corp,192.168.1.188,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,13,BENIGN,0
+2026-11-07 06:57:00,it_support,192.168.1.98,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,2,BENIGN,0
+2026-11-06 08:40:00,emma.davis,192.168.1.76,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,4,BENIGN,0
+2026-11-05 05:55:00,emma.davis,192.168.1.12,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,13,BENIGN,0
+2026-11-04 16:00:00,devops_lead,192.168.1.11,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,13,BENIGN,0
+2026-11-05 19:48:00,david.brown,192.168.1.198,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,2,BENIGN,0
+2026-11-06 03:18:00,david.brown,192.168.1.214,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,8,BENIGN,0
+2026-11-06 00:46:00,david.brown,198.51.100.12,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,0,1,1,89,SPRAY_ATTACK,1
+2026-11-02 14:09:00,admin_corp,192.168.1.79,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,4,BENIGN,0
+2026-11-01 21:34:00,it_support,192.168.1.36,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,14,BENIGN,0
+2026-11-01 10:15:00,david.brown,192.168.1.13,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,9,BENIGN,0
+2026-11-07 00:06:00,frank.miller,192.168.1.212,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,4,BENIGN,0
+2026-11-01 23:19:00,emma.davis,203.0.113.10,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,8,23,1,1,78,BRUTE_FORCE,1
+2026-11-05 16:12:00,alice.smith,192.168.1.206,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,14,BENIGN,0
+2026-11-04 03:30:00,alice.smith,192.168.1.198,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,6,BENIGN,0
+2026-11-06 17:07:00,grace.wilson,192.168.1.89,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,1,BENIGN,0
+2026-11-07 14:05:00,it_support,192.168.1.133,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,1,BENIGN,0
+2026-11-03 19:29:00,bob.jones,192.168.1.121,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,8,BENIGN,0
+2026-11-07 23:40:00,bob.jones,192.168.1.72,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,15,BENIGN,0
+2026-11-08 02:49:00,carol.white,192.168.1.32,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,10,BENIGN,0
+2026-11-02 00:24:00,alice.smith,192.168.1.49,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,10,BENIGN,0
+2026-11-07 16:29:00,frank.miller,203.0.113.57,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,11,16,1,1,81,BRUTE_FORCE,1
+2026-11-02 20:48:00,emma.davis,198.51.100.32,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,20,1,1,94,SPRAY_ATTACK,1
+2026-11-07 16:40:00,emma.davis,192.168.1.135,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,11,BENIGN,0
+2026-11-05 00:24:00,admin_corp,192.168.1.222,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,14,BENIGN,0
+2026-11-04 16:45:00,emma.davis,192.168.1.126,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,5,BENIGN,0
+2026-11-01 13:07:00,devops_lead,198.51.100.50,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,13,1,1,87,SPRAY_ATTACK,1
+2026-11-04 23:35:00,bob.jones,192.168.1.147,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,15,BENIGN,0
+2026-11-07 14:36:00,carol.white,192.168.1.92,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,3,BENIGN,0
+2026-11-07 06:53:00,bob.jones,192.168.1.250,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,6,BENIGN,0
+2026-11-02 13:14:00,admin_corp,192.168.1.18,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,8,BENIGN,0
+2026-11-01 21:25:00,frank.miller,192.168.1.193,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,21,0,0,6,BENIGN,0
+2026-11-06 22:12:00,bob.jones,192.168.1.173,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,13,BENIGN,0
+2026-11-05 12:47:00,alice.smith,203.0.113.35,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,9,12,1,1,72,BRUTE_FORCE,1
+2026-11-03 18:58:00,it_support,192.168.1.195,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,6,BENIGN,0
+2026-11-07 07:42:00,david.brown,192.168.1.55,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,11,BENIGN,0
+2026-11-06 13:16:00,grace.wilson,198.51.100.11,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,13,1,1,97,SPRAY_ATTACK,1
+2026-11-05 21:40:00,it_support,192.168.1.50,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,21,0,0,10,BENIGN,0
+2026-11-05 13:31:00,grace.wilson,203.0.113.56,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,14,13,1,1,87,BRUTE_FORCE,1
+2026-11-03 18:25:00,grace.wilson,203.0.113.96,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,12,18,1,1,84,BRUTE_FORCE,1
+2026-11-05 20:26:00,alice.smith,192.168.1.82,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,9,BENIGN,0
+2026-11-01 09:48:00,emma.davis,10.200.14.21,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,23,OFF_HOURS,1
+2026-11-01 18:19:00,admin_corp,192.168.1.45,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,7,BENIGN,0
+2026-11-03 23:38:00,emma.davis,203.0.113.12,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,6,23,1,1,93,BRUTE_FORCE,1
+2026-11-05 00:40:00,admin_corp,192.168.1.221,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,1,BENIGN,0
+2026-11-07 21:22:00,grace.wilson,192.168.1.24,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,13,BENIGN,0
+2026-11-06 01:45:00,bob.jones,198.51.100.15,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,1,1,1,99,SPRAY_ATTACK,1
+2026-11-01 11:08:00,grace.wilson,192.168.1.144,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,11,0,0,4,BENIGN,0
+2026-11-05 01:15:00,it_support,192.168.1.49,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,12,BENIGN,0
+2026-11-06 09:41:00,devops_lead,192.168.1.33,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,12,BENIGN,0
+2026-11-03 00:26:00,carol.white,192.168.1.131,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,2,BENIGN,0
+2026-11-05 20:50:00,it_support,192.168.1.188,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,6,BENIGN,0
+2026-11-06 21:14:00,grace.wilson,192.168.1.60,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,13,BENIGN,0
+2026-11-05 00:19:00,devops_lead,192.168.1.181,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,6,BENIGN,0
+2026-11-04 23:35:00,frank.miller,192.168.1.16,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,23,0,0,14,BENIGN,0
+2026-11-02 23:50:00,admin_corp,192.168.1.219,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,4,BENIGN,0
+2026-11-02 07:26:00,bob.jones,192.168.1.72,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,3,BENIGN,0
+2026-11-04 19:20:00,admin_corp,192.168.1.94,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,6,BENIGN,0
+2026-11-07 13:13:00,it_support,203.0.113.71,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,5,13,1,1,82,BRUTE_FORCE,1
+2026-11-07 23:12:00,it_support,192.168.1.53,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,8,BENIGN,0
+2026-11-01 22:30:00,admin_corp,192.168.1.12,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,11,BENIGN,0
+2026-11-02 13:28:00,alice.smith,192.168.1.236,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,13,0,0,3,BENIGN,0
+2026-11-04 22:09:00,admin_corp,198.51.100.35,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,22,1,1,85,SPRAY_ATTACK,1
+2026-11-03 14:19:00,it_support,10.200.36.46,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,36,OFF_HOURS,1
+2026-11-04 19:16:00,frank.miller,192.168.1.200,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,11,BENIGN,0
+2026-11-05 09:03:00,emma.davis,192.168.1.138,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,12,BENIGN,0
+2026-11-01 16:03:00,it_support,114.119.58.39,LOGIN_SUCCESS,"Singapore, SG",curl/7.88.1,0,16,1,1,48,IMPOSSIBLE_TRAVEL,1
+2026-11-02 07:59:00,grace.wilson,192.168.1.183,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,4,BENIGN,0
+2026-11-06 04:28:00,emma.davis,198.51.100.22,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,4,1,1,97,SPRAY_ATTACK,1
+2026-11-02 19:59:00,david.brown,192.168.1.158,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,4,BENIGN,0
+2026-11-06 05:27:00,carol.white,192.168.1.154,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,3,BENIGN,0
+2026-11-03 10:17:00,frank.miller,203.0.113.19,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,11,10,1,1,83,BRUTE_FORCE,1
+2026-11-04 18:51:00,admin_corp,192.168.1.220,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,3,BENIGN,0
+2026-11-02 19:56:00,carol.white,192.168.1.166,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,7,BENIGN,0
+2026-11-08 02:51:00,david.brown,192.168.1.16,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,15,BENIGN,0
+2026-11-02 20:37:00,it_support,203.0.113.61,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,11,20,1,1,85,BRUTE_FORCE,1
+2026-11-06 17:24:00,carol.white,192.168.1.67,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,0,BENIGN,0
+2026-11-04 09:42:00,grace.wilson,192.168.1.181,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,14,BENIGN,0
+2026-11-06 21:48:00,frank.miller,198.51.100.16,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,21,1,1,92,SPRAY_ATTACK,1
+2026-11-01 19:26:00,devops_lead,192.168.1.107,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,1,BENIGN,0
+2026-11-07 06:11:00,bob.jones,192.168.1.221,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,12,BENIGN,0
+2026-11-01 18:44:00,it_support,192.168.1.205,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,12,BENIGN,0
+2026-11-04 19:10:00,emma.davis,192.168.1.118,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,19,0,0,4,BENIGN,0
+2026-11-06 14:36:00,admin_corp,192.168.1.138,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,4,BENIGN,0
+2026-11-05 19:21:00,grace.wilson,192.168.1.16,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,6,BENIGN,0
+2026-11-06 12:10:00,bob.jones,192.168.1.187,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,2,BENIGN,0
+2026-11-02 15:11:00,admin_corp,192.168.1.31,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,5,BENIGN,0
+2026-11-05 15:25:00,it_support,192.168.1.206,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,4,BENIGN,0
+2026-11-03 04:17:00,carol.white,192.168.1.192,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,14,BENIGN,0
+2026-11-04 14:52:00,carol.white,192.168.1.43,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,8,BENIGN,0
+2026-11-01 11:21:00,admin_corp,192.168.1.137,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,7,BENIGN,0
+2026-11-03 19:14:00,devops_lead,192.168.1.126,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,0,BENIGN,0
+2026-11-04 02:50:00,it_support,192.168.1.170,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,1,BENIGN,0
+2026-11-05 07:19:00,alice.smith,192.168.1.18,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,7,0,0,1,BENIGN,0
+2026-11-02 13:45:00,grace.wilson,10.200.11.44,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,43,OFF_HOURS,1
+2026-11-07 22:06:00,frank.miller,114.119.24.197,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,1,1,63,IMPOSSIBLE_TRAVEL,1
+2026-11-05 15:29:00,bob.jones,203.0.113.71,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,12,15,1,1,74,BRUTE_FORCE,1
+2026-11-02 17:20:00,emma.davis,192.168.1.115,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,1,BENIGN,0
+2026-11-02 13:51:00,devops_lead,192.168.1.171,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,9,BENIGN,0
+2026-11-06 04:37:00,devops_lead,203.0.113.34,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,14,4,1,1,88,BRUTE_FORCE,1
+2026-11-06 23:33:00,it_support,192.168.1.137,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,7,BENIGN,0
+2026-11-04 15:20:00,david.brown,192.168.1.16,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,6,BENIGN,0
+2026-11-06 01:14:00,grace.wilson,192.168.1.99,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,9,BENIGN,0
+2026-11-04 05:29:00,bob.jones,192.168.1.139,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,5,0,0,10,BENIGN,0
+2026-11-05 05:13:00,grace.wilson,192.168.1.167,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,5,0,0,10,BENIGN,0
+2026-11-06 18:50:00,admin_corp,203.0.113.83,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,7,18,1,1,90,BRUTE_FORCE,1
+2026-11-06 13:47:00,it_support,198.51.100.30,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,13,1,1,81,SPRAY_ATTACK,1
+2026-11-07 06:18:00,emma.davis,192.168.1.183,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,6,BENIGN,0
+2026-11-07 21:41:00,frank.miller,203.0.113.46,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,9,21,1,1,70,BRUTE_FORCE,1
+2026-11-05 04:37:00,grace.wilson,192.168.1.225,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,5,BENIGN,0
+2026-11-08 02:32:00,bob.jones,198.51.100.49,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,2,1,1,90,SPRAY_ATTACK,1
+2026-11-01 16:39:00,emma.davis,192.168.1.137,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,9,BENIGN,0
+2026-11-03 19:02:00,it_support,192.168.1.38,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,2,BENIGN,0
+2026-11-06 09:11:00,it_support,192.168.1.133,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,15,BENIGN,0
+2026-11-07 07:00:00,emma.davis,203.0.113.19,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,8,7,1,1,93,BRUTE_FORCE,1
+2026-11-01 17:59:00,admin_corp,192.168.1.231,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,1,BENIGN,0
+2026-11-08 02:17:00,bob.jones,192.168.1.237,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,9,BENIGN,0
+2026-11-01 14:09:00,devops_lead,203.0.113.82,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,8,14,1,1,76,BRUTE_FORCE,1
+2026-11-04 14:16:00,emma.davis,192.168.1.207,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,4,BENIGN,0
+2026-11-03 03:01:00,emma.davis,192.168.1.169,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,10,BENIGN,0
+2026-11-04 10:01:00,carol.white,114.119.73.147,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,1,1,44,IMPOSSIBLE_TRAVEL,1
+2026-11-04 21:02:00,devops_lead,198.51.100.35,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,21,1,1,81,SPRAY_ATTACK,1
+2026-11-02 19:32:00,alice.smith,192.168.1.182,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,2,BENIGN,0
+2026-11-06 04:28:00,grace.wilson,192.168.1.162,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,10,BENIGN,0
+2026-11-03 14:07:00,it_support,192.168.1.246,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,14,BENIGN,0
+2026-11-02 10:34:00,admin_corp,192.168.1.174,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,7,BENIGN,0
+2026-11-02 23:15:00,devops_lead,192.168.1.103,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,10,BENIGN,0
+2026-11-05 00:41:00,admin_corp,192.168.1.26,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,14,BENIGN,0
+2026-11-03 06:39:00,emma.davis,203.0.113.78,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,11,6,1,1,92,BRUTE_FORCE,1
+2026-11-02 13:13:00,frank.miller,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,13,BENIGN,0
+2026-11-04 01:09:00,devops_lead,192.168.1.50,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,6,BENIGN,0
+2026-11-08 01:23:00,grace.wilson,203.0.113.56,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,7,1,1,1,91,BRUTE_FORCE,1
+2026-11-02 05:17:00,devops_lead,203.0.113.15,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,13,5,1,1,73,BRUTE_FORCE,1
+2026-11-06 09:35:00,carol.white,192.168.1.113,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,9,0,0,12,BENIGN,0
+2026-11-05 01:25:00,admin_corp,192.168.1.25,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,0,BENIGN,0
+2026-11-03 00:04:00,carol.white,192.168.1.84,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,6,BENIGN,0
+2026-11-03 16:10:00,frank.miller,192.168.1.213,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,11,BENIGN,0
+2026-11-02 08:23:00,devops_lead,192.168.1.140,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,1,BENIGN,0
+2026-11-05 12:50:00,it_support,10.200.1.46,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,29,OFF_HOURS,1
+2026-11-01 16:31:00,david.brown,192.168.1.161,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,12,BENIGN,0
+2026-11-05 22:53:00,grace.wilson,192.168.1.64,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,12,BENIGN,0
+2026-11-05 10:23:00,grace.wilson,192.168.1.233,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,0,BENIGN,0
+2026-11-02 23:20:00,admin_corp,192.168.1.44,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,13,BENIGN,0
+2026-11-06 12:32:00,devops_lead,114.119.160.47,LOGIN_SUCCESS,"Singapore, SG",Python-urllib/3.12,0,12,1,1,67,IMPOSSIBLE_TRAVEL,1
+2026-11-07 14:45:00,admin_corp,192.168.1.67,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,15,BENIGN,0
+2026-11-04 00:39:00,it_support,192.168.1.247,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,0,0,0,15,BENIGN,0
+2026-11-05 12:39:00,bob.jones,192.168.1.186,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,8,BENIGN,0
+2026-11-06 14:58:00,it_support,192.168.1.237,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,2,BENIGN,0
+2026-11-07 11:15:00,devops_lead,192.168.1.23,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,15,BENIGN,0
+2026-11-06 11:59:00,it_support,198.51.100.37,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,11,1,1,90,SPRAY_ATTACK,1
+2026-11-06 02:58:00,frank.miller,10.200.19.19,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,43,OFF_HOURS,1
+2026-11-07 17:56:00,emma.davis,192.168.1.131,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,9,BENIGN,0
+2026-11-01 15:28:00,emma.davis,192.168.1.42,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,8,BENIGN,0
+2026-11-04 11:10:00,emma.davis,192.168.1.38,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,14,BENIGN,0
+2026-11-05 12:59:00,carol.white,192.168.1.189,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,1,BENIGN,0
+2026-11-05 05:38:00,bob.jones,10.200.39.10,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,27,OFF_HOURS,1
+2026-11-06 08:12:00,carol.white,192.168.1.197,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,3,BENIGN,0
+2026-11-01 22:21:00,carol.white,192.168.1.131,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,7,BENIGN,0
+2026-11-05 15:43:00,grace.wilson,192.168.1.47,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,14,BENIGN,0
+2026-11-05 16:19:00,frank.miller,10.200.44.3,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,39,OFF_HOURS,1
+2026-11-04 10:27:00,frank.miller,192.168.1.215,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,12,BENIGN,0
+2026-11-06 13:55:00,david.brown,192.168.1.160,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,5,BENIGN,0
+2026-11-04 21:33:00,it_support,192.168.1.12,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,3,BENIGN,0
+2026-11-06 09:47:00,frank.miller,192.168.1.82,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,2,BENIGN,0
+2026-11-01 23:32:00,devops_lead,192.168.1.223,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,23,0,0,3,BENIGN,0
+2026-11-02 07:36:00,devops_lead,192.168.1.178,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,8,BENIGN,0
+2026-11-04 16:27:00,admin_corp,192.168.1.29,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,10,BENIGN,0
+2026-11-04 06:17:00,carol.white,203.0.113.36,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,11,6,1,1,80,BRUTE_FORCE,1
+2026-11-02 00:25:00,emma.davis,114.119.68.46,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,1,1,71,IMPOSSIBLE_TRAVEL,1
+2026-11-03 14:48:00,devops_lead,192.168.1.175,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,13,BENIGN,0
+2026-11-03 19:39:00,devops_lead,192.168.1.243,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,19,0,0,1,BENIGN,0
+2026-11-02 03:55:00,bob.jones,192.168.1.74,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,4,BENIGN,0
+2026-11-01 08:15:00,alice.smith,192.168.1.78,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,12,BENIGN,0
+2026-11-07 20:55:00,alice.smith,192.168.1.250,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,2,BENIGN,0
+2026-11-07 11:30:00,david.brown,192.168.1.186,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,11,BENIGN,0
+2026-11-05 03:04:00,emma.davis,192.168.1.171,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,10,BENIGN,0
+2026-11-02 05:59:00,admin_corp,203.0.113.38,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,13,5,1,1,71,BRUTE_FORCE,1
+2026-11-05 16:55:00,david.brown,192.168.1.109,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,15,BENIGN,0
+2026-11-02 07:11:00,admin_corp,192.168.1.45,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,7,BENIGN,0
+2026-11-06 21:36:00,grace.wilson,192.168.1.148,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,14,BENIGN,0
+2026-11-01 12:29:00,alice.smith,192.168.1.96,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,14,BENIGN,0
+2026-11-07 10:32:00,carol.white,192.168.1.69,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,15,BENIGN,0
+2026-11-01 13:13:00,admin_corp,198.51.100.40,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,13,1,1,87,SPRAY_ATTACK,1
+2026-11-02 19:39:00,alice.smith,192.168.1.22,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,5,BENIGN,0
+2026-11-08 01:24:00,bob.jones,203.0.113.14,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,14,1,1,1,95,BRUTE_FORCE,1
+2026-11-03 20:14:00,bob.jones,203.0.113.55,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,10,20,1,1,73,BRUTE_FORCE,1
+2026-11-07 21:17:00,it_support,192.168.1.224,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,10,BENIGN,0
+2026-11-02 01:16:00,bob.jones,192.168.1.203,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,5,BENIGN,0
+2026-11-06 07:48:00,david.brown,114.119.11.35,LOGIN_SUCCESS,"Sydney, AU",Python-urllib/3.12,0,7,1,1,64,IMPOSSIBLE_TRAVEL,1
+2026-11-03 03:05:00,alice.smith,198.51.100.6,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,3,1,1,80,SPRAY_ATTACK,1
+2026-11-03 09:00:00,bob.jones,192.168.1.161,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,15,BENIGN,0
+2026-11-02 18:40:00,david.brown,192.168.1.79,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,5,BENIGN,0
+2026-11-01 18:17:00,devops_lead,192.168.1.137,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,9,BENIGN,0
+2026-11-05 07:00:00,grace.wilson,192.168.1.70,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,7,0,0,3,BENIGN,0
+2026-11-05 10:50:00,it_support,192.168.1.128,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,3,BENIGN,0
+2026-11-03 00:45:00,admin_corp,192.168.1.50,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,9,BENIGN,0
+2026-11-03 17:14:00,grace.wilson,192.168.1.167,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,1,BENIGN,0
+2026-11-07 10:45:00,carol.white,192.168.1.17,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,7,BENIGN,0
+2026-11-06 09:28:00,devops_lead,192.168.1.117,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,9,0,0,10,BENIGN,0
+2026-11-03 22:50:00,bob.jones,192.168.1.35,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,6,BENIGN,0
+2026-11-05 14:33:00,david.brown,192.168.1.159,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,4,BENIGN,0
+2026-11-03 19:02:00,devops_lead,192.168.1.109,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,6,BENIGN,0
+2026-11-05 09:56:00,emma.davis,192.168.1.42,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,9,0,0,8,BENIGN,0
+2026-11-02 21:17:00,bob.jones,198.51.100.30,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,21,1,1,85,SPRAY_ATTACK,1
+2026-11-05 05:50:00,david.brown,198.51.100.39,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,5,1,1,99,SPRAY_ATTACK,1
+2026-11-03 06:25:00,devops_lead,10.200.15.6,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,38,OFF_HOURS,1
+2026-11-06 17:18:00,admin_corp,192.168.1.196,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,17,0,0,7,BENIGN,0
+2026-11-05 01:23:00,grace.wilson,192.168.1.238,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,13,BENIGN,0
+2026-11-01 20:05:00,alice.smith,10.200.47.50,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,36,OFF_HOURS,1
+2026-11-05 19:41:00,admin_corp,203.0.113.90,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,12,19,1,1,77,BRUTE_FORCE,1
+2026-11-02 06:42:00,it_support,203.0.113.89,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,7,6,1,1,81,BRUTE_FORCE,1
+2026-11-04 16:47:00,david.brown,192.168.1.33,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,5,BENIGN,0
+2026-11-06 13:25:00,devops_lead,192.168.1.16,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,12,BENIGN,0
+2026-11-03 10:31:00,frank.miller,192.168.1.190,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,10,BENIGN,0
+2026-11-07 08:59:00,alice.smith,192.168.1.202,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,8,0,0,6,BENIGN,0
+2026-11-02 06:07:00,devops_lead,198.51.100.48,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,6,1,1,96,SPRAY_ATTACK,1
+2026-11-05 11:24:00,alice.smith,192.168.1.103,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,11,BENIGN,0
+2026-11-03 07:52:00,it_support,192.168.1.153,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,7,0,0,7,BENIGN,0
+2026-11-07 11:22:00,bob.jones,192.168.1.198,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,10,BENIGN,0
+2026-11-05 08:19:00,emma.davis,192.168.1.118,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,11,BENIGN,0
+2026-11-06 11:33:00,admin_corp,192.168.1.222,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,11,0,0,9,BENIGN,0
+2026-11-06 11:26:00,devops_lead,192.168.1.182,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,14,BENIGN,0
+2026-11-02 07:51:00,bob.jones,192.168.1.55,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,8,BENIGN,0
+2026-11-02 14:36:00,carol.white,192.168.1.233,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,14,0,0,0,BENIGN,0
+2026-11-04 16:04:00,grace.wilson,10.200.35.9,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,34,OFF_HOURS,1
+2026-11-01 13:52:00,emma.davis,192.168.1.15,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,13,BENIGN,0
+2026-11-07 22:02:00,frank.miller,192.168.1.211,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,14,BENIGN,0
+2026-11-06 13:04:00,emma.davis,192.168.1.239,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,7,BENIGN,0
+2026-11-06 20:14:00,frank.miller,10.200.50.4,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,34,OFF_HOURS,1
+2026-11-03 05:26:00,devops_lead,114.119.183.138,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,1,1,51,IMPOSSIBLE_TRAVEL,1
+2026-11-03 01:55:00,carol.white,192.168.1.20,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,8,BENIGN,0
+2026-11-05 12:57:00,carol.white,192.168.1.191,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,11,BENIGN,0
+2026-11-03 00:24:00,frank.miller,192.168.1.51,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,0,0,0,12,BENIGN,0
+2026-11-07 00:23:00,carol.white,114.119.82.40,LOGIN_SUCCESS,"Sydney, AU",Python-urllib/3.12,0,0,1,1,72,IMPOSSIBLE_TRAVEL,1
+2026-11-05 02:28:00,emma.davis,192.168.1.84,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,2,0,0,14,BENIGN,0
+2026-11-05 04:30:00,bob.jones,192.168.1.240,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,3,BENIGN,0
+2026-11-04 20:08:00,alice.smith,192.168.1.225,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,10,BENIGN,0
+2026-11-01 23:02:00,devops_lead,192.168.1.159,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,2,BENIGN,0
+2026-11-07 11:02:00,admin_corp,192.168.1.32,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,1,BENIGN,0
+2026-11-05 10:36:00,grace.wilson,192.168.1.228,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,0,BENIGN,0
+2026-11-04 13:44:00,frank.miller,192.168.1.124,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,14,BENIGN,0
+2026-11-06 01:30:00,admin_corp,192.168.1.216,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,4,BENIGN,0
+2026-11-08 00:21:00,devops_lead,192.168.1.63,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,0,0,0,10,BENIGN,0
+2026-11-02 02:04:00,devops_lead,203.0.113.12,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,9,2,1,1,83,BRUTE_FORCE,1
+2026-11-03 07:46:00,it_support,192.168.1.155,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,12,BENIGN,0
+2026-11-04 15:03:00,it_support,192.168.1.220,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,14,BENIGN,0
+2026-11-03 21:19:00,alice.smith,203.0.113.20,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,12,21,1,1,73,BRUTE_FORCE,1
+2026-11-04 14:34:00,grace.wilson,192.168.1.242,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,8,BENIGN,0
+2026-11-06 22:39:00,bob.jones,192.168.1.102,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,8,BENIGN,0
+2026-11-06 18:00:00,bob.jones,192.168.1.197,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,18,0,0,1,BENIGN,0
+2026-11-02 23:55:00,frank.miller,192.168.1.187,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,8,BENIGN,0
+2026-11-05 10:38:00,grace.wilson,192.168.1.101,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,2,BENIGN,0
+2026-11-07 04:20:00,david.brown,203.0.113.24,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,13,4,1,1,80,BRUTE_FORCE,1
+2026-11-04 22:21:00,emma.davis,192.168.1.188,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,22,0,0,11,BENIGN,0
+2026-11-02 23:15:00,alice.smith,192.168.1.82,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,5,BENIGN,0
+2026-11-02 11:59:00,david.brown,192.168.1.66,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,3,BENIGN,0
+2026-11-06 01:58:00,admin_corp,114.119.30.34,LOGIN_SUCCESS,"Sydney, AU",curl/7.88.1,0,1,1,1,62,IMPOSSIBLE_TRAVEL,1
+2026-11-04 21:05:00,frank.miller,192.168.1.123,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,0,BENIGN,0
+2026-11-02 16:24:00,david.brown,192.168.1.187,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,4,BENIGN,0
+2026-11-03 17:19:00,carol.white,10.200.28.45,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,44,OFF_HOURS,1
+2026-11-06 20:15:00,grace.wilson,192.168.1.37,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,1,BENIGN,0
+2026-11-06 16:06:00,bob.jones,198.51.100.3,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,16,1,1,89,SPRAY_ATTACK,1
+2026-11-01 10:49:00,bob.jones,203.0.113.78,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,7,10,1,1,91,BRUTE_FORCE,1
+2026-11-05 08:00:00,alice.smith,192.168.1.226,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,5,BENIGN,0
+2026-11-07 00:43:00,devops_lead,192.168.1.155,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,0,BENIGN,0
+2026-11-07 08:25:00,david.brown,192.168.1.82,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,8,0,0,3,BENIGN,0
+2026-11-03 18:27:00,it_support,198.51.100.31,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,18,1,1,98,SPRAY_ATTACK,1
+2026-11-03 10:34:00,admin_corp,192.168.1.37,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,10,0,0,13,BENIGN,0
+2026-11-03 18:31:00,it_support,192.168.1.38,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,4,BENIGN,0
+2026-11-06 23:24:00,frank.miller,192.168.1.152,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,3,BENIGN,0
+2026-11-05 17:05:00,emma.davis,192.168.1.198,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,17,0,0,14,BENIGN,0
+2026-11-03 21:41:00,it_support,192.168.1.228,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,21,0,0,15,BENIGN,0
+2026-11-05 12:21:00,carol.white,192.168.1.182,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,14,BENIGN,0
+2026-11-07 06:44:00,bob.jones,192.168.1.111,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,3,BENIGN,0
+2026-11-03 06:05:00,bob.jones,192.168.1.60,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,12,BENIGN,0
+2026-11-02 17:32:00,david.brown,203.0.113.93,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,14,17,1,1,88,BRUTE_FORCE,1
+2026-11-04 10:33:00,grace.wilson,192.168.1.180,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,4,BENIGN,0
+2026-11-06 12:09:00,bob.jones,192.168.1.135,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,12,0,0,4,BENIGN,0
+2026-11-01 16:07:00,bob.jones,192.168.1.222,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,5,BENIGN,0
+2026-11-05 16:30:00,devops_lead,192.168.1.49,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,16,0,0,2,BENIGN,0
+2026-11-07 05:59:00,admin_corp,203.0.113.26,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,12,5,1,1,86,BRUTE_FORCE,1
+2026-11-04 07:28:00,it_support,192.168.1.230,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,7,0,0,3,BENIGN,0
+2026-11-05 16:46:00,admin_corp,192.168.1.106,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,5,BENIGN,0
+2026-11-07 16:01:00,emma.davis,198.51.100.11,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,16,1,1,93,SPRAY_ATTACK,1
+2026-11-02 20:44:00,emma.davis,192.168.1.134,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,15,BENIGN,0
+2026-11-06 17:58:00,it_support,198.51.100.33,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,17,1,1,92,SPRAY_ATTACK,1
+2026-11-04 07:56:00,admin_corp,192.168.1.106,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,0,BENIGN,0
+2026-11-08 01:15:00,alice.smith,192.168.1.103,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,10,BENIGN,0
+2026-11-05 15:56:00,bob.jones,192.168.1.101,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,7,BENIGN,0
+2026-11-04 03:37:00,david.brown,192.168.1.161,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,9,BENIGN,0
+2026-11-02 15:16:00,frank.miller,192.168.1.147,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,13,BENIGN,0
+2026-11-07 19:07:00,it_support,198.51.100.18,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,19,1,1,95,SPRAY_ATTACK,1
+2026-11-08 00:34:00,alice.smith,10.200.25.37,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,45,OFF_HOURS,1
+2026-11-06 21:22:00,bob.jones,192.168.1.62,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,10,BENIGN,0
+2026-11-03 05:31:00,devops_lead,192.168.1.121,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,2,BENIGN,0
+2026-11-07 10:20:00,david.brown,192.168.1.22,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,7,BENIGN,0
+2026-11-02 09:07:00,devops_lead,192.168.1.96,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,15,BENIGN,0
+2026-11-06 04:38:00,david.brown,192.168.1.29,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,13,BENIGN,0
+2026-11-07 11:27:00,frank.miller,192.168.1.112,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,11,0,0,5,BENIGN,0
+2026-11-01 13:05:00,it_support,198.51.100.37,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,13,1,1,86,SPRAY_ATTACK,1
+2026-11-06 15:37:00,emma.davis,114.119.137.158,LOGIN_SUCCESS,"Singapore, SG",Python-urllib/3.12,0,15,1,1,43,IMPOSSIBLE_TRAVEL,1
+2026-11-07 06:37:00,david.brown,192.168.1.47,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,9,BENIGN,0
+2026-11-06 06:54:00,grace.wilson,192.168.1.222,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,13,BENIGN,0
+2026-11-04 08:54:00,emma.davis,192.168.1.75,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,4,BENIGN,0
+2026-11-03 12:25:00,alice.smith,192.168.1.221,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,13,BENIGN,0
+2026-11-06 03:15:00,alice.smith,192.168.1.79,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,8,BENIGN,0
+2026-11-07 14:23:00,carol.white,192.168.1.20,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,2,BENIGN,0
+2026-11-04 21:44:00,devops_lead,192.168.1.26,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,2,BENIGN,0
+2026-11-05 20:23:00,carol.white,192.168.1.156,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,8,BENIGN,0
+2026-11-06 23:34:00,bob.jones,192.168.1.41,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,23,0,0,12,BENIGN,0
+2026-11-04 00:26:00,grace.wilson,192.168.1.37,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,0,0,0,14,BENIGN,0
+2026-11-05 23:31:00,emma.davis,198.51.100.4,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,23,1,1,97,SPRAY_ATTACK,1
+2026-11-05 14:20:00,bob.jones,192.168.1.118,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,8,BENIGN,0
+2026-11-02 23:35:00,frank.miller,192.168.1.104,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,1,BENIGN,0
+2026-11-01 22:56:00,david.brown,192.168.1.108,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,22,0,0,11,BENIGN,0
+2026-11-02 17:20:00,it_support,198.51.100.29,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,17,1,1,80,SPRAY_ATTACK,1
+2026-11-05 19:19:00,emma.davis,192.168.1.249,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,5,BENIGN,0
+2026-11-06 07:51:00,frank.miller,198.51.100.50,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,7,1,1,93,SPRAY_ATTACK,1
+2026-11-01 17:16:00,emma.davis,198.51.100.50,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,17,1,1,95,SPRAY_ATTACK,1
+2026-11-06 00:46:00,frank.miller,192.168.1.234,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,2,BENIGN,0
+2026-11-05 08:05:00,grace.wilson,192.168.1.218,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,1,BENIGN,0
+2026-11-03 10:11:00,admin_corp,203.0.113.18,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,8,10,1,1,90,BRUTE_FORCE,1
+2026-11-04 19:27:00,frank.miller,192.168.1.38,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,4,BENIGN,0
+2026-11-08 02:13:00,grace.wilson,203.0.113.41,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,7,2,1,1,78,BRUTE_FORCE,1
+2026-11-03 07:23:00,devops_lead,203.0.113.37,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,11,7,1,1,81,BRUTE_FORCE,1
+2026-11-03 09:41:00,grace.wilson,198.51.100.37,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,9,1,1,80,SPRAY_ATTACK,1
+2026-11-01 14:17:00,it_support,192.168.1.170,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,14,0,0,6,BENIGN,0
+2026-11-04 07:30:00,carol.white,192.168.1.168,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,2,BENIGN,0
+2026-11-05 12:29:00,carol.white,114.119.31.4,LOGIN_SUCCESS,"Tokyo, JP",Python-urllib/3.12,0,12,1,1,67,IMPOSSIBLE_TRAVEL,1
+2026-11-06 11:54:00,admin_corp,192.168.1.192,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,11,0,0,8,BENIGN,0
+2026-11-04 14:38:00,admin_corp,192.168.1.120,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,9,BENIGN,0
+2026-11-03 11:43:00,grace.wilson,192.168.1.212,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,8,BENIGN,0
+2026-11-04 00:19:00,devops_lead,192.168.1.73,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,14,BENIGN,0
+2026-11-02 07:25:00,alice.smith,192.168.1.233,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,7,0,0,6,BENIGN,0
+2026-11-05 16:44:00,grace.wilson,192.168.1.75,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,1,BENIGN,0
+2026-11-05 02:54:00,david.brown,192.168.1.100,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,12,BENIGN,0
+2026-11-04 18:37:00,grace.wilson,192.168.1.43,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,5,BENIGN,0
+2026-11-07 01:34:00,admin_corp,114.119.120.34,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,1,1,73,IMPOSSIBLE_TRAVEL,1
+2026-11-06 06:14:00,carol.white,192.168.1.90,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,8,BENIGN,0
+2026-11-05 10:28:00,grace.wilson,192.168.1.234,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,8,BENIGN,0
+2026-11-07 05:11:00,frank.miller,192.168.1.52,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,5,0,0,4,BENIGN,0
+2026-11-07 15:45:00,admin_corp,192.168.1.48,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,15,BENIGN,0
+2026-11-04 07:04:00,carol.white,192.168.1.121,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,11,BENIGN,0
+2026-11-07 17:10:00,admin_corp,192.168.1.38,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,6,BENIGN,0
+2026-11-04 13:35:00,carol.white,203.0.113.96,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,14,13,1,1,70,BRUTE_FORCE,1
+2026-11-07 07:39:00,devops_lead,192.168.1.245,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,3,BENIGN,0
+2026-11-05 01:45:00,alice.smith,192.168.1.184,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,3,BENIGN,0
+2026-11-05 00:21:00,carol.white,192.168.1.127,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,8,BENIGN,0
+2026-11-08 02:16:00,alice.smith,192.168.1.21,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,2,0,0,4,BENIGN,0
+2026-11-03 17:44:00,alice.smith,203.0.113.37,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,6,17,1,1,87,BRUTE_FORCE,1
+2026-11-08 04:28:00,grace.wilson,192.168.1.75,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,4,0,0,12,BENIGN,0
+2026-11-02 08:22:00,alice.smith,198.51.100.11,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,8,1,1,92,SPRAY_ATTACK,1
+2026-11-04 13:49:00,carol.white,192.168.1.135,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,9,BENIGN,0
+2026-11-08 04:48:00,carol.white,192.168.1.34,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,4,0,0,14,BENIGN,0
+2026-11-05 17:59:00,admin_corp,192.168.1.163,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,11,BENIGN,0
+2026-11-03 10:54:00,grace.wilson,192.168.1.33,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,14,BENIGN,0
+2026-11-03 21:14:00,carol.white,114.119.135.162,LOGIN_SUCCESS,"Tokyo, JP",Python-urllib/3.12,0,21,1,1,45,IMPOSSIBLE_TRAVEL,1
+2026-11-04 15:23:00,admin_corp,192.168.1.242,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,4,BENIGN,0
+2026-11-04 18:02:00,david.brown,192.168.1.85,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,1,BENIGN,0
+2026-11-07 04:12:00,bob.jones,192.168.1.115,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,8,BENIGN,0
+2026-11-05 09:04:00,emma.davis,192.168.1.206,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,14,BENIGN,0
+2026-11-03 09:02:00,carol.white,203.0.113.6,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,9,9,1,1,80,BRUTE_FORCE,1
+2026-11-08 00:21:00,admin_corp,203.0.113.58,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,7,0,1,1,76,BRUTE_FORCE,1
+2026-11-03 10:33:00,bob.jones,192.168.1.164,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,0,BENIGN,0
+2026-11-01 09:36:00,grace.wilson,192.168.1.53,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,9,0,0,15,BENIGN,0
+2026-11-04 18:42:00,devops_lead,203.0.113.79,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,9,18,1,1,72,BRUTE_FORCE,1
+2026-11-02 18:10:00,carol.white,192.168.1.38,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,18,0,0,0,BENIGN,0
+2026-11-03 17:09:00,admin_corp,192.168.1.176,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,6,BENIGN,0
+2026-11-02 07:31:00,emma.davis,203.0.113.19,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,5,7,1,1,73,BRUTE_FORCE,1
+2026-11-03 05:22:00,carol.white,192.168.1.123,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,14,BENIGN,0
+2026-11-07 23:49:00,david.brown,192.168.1.155,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,3,BENIGN,0
+2026-11-06 05:55:00,grace.wilson,203.0.113.95,LOGIN_FAILED,"Singapore, SG",curl/7.88.1,12,5,1,1,82,BRUTE_FORCE,1
+2026-11-06 20:45:00,it_support,192.168.1.166,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,0,BENIGN,0
+2026-11-06 03:15:00,devops_lead,192.168.1.26,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,15,BENIGN,0
+2026-11-02 15:56:00,admin_corp,192.168.1.175,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,0,BENIGN,0
+2026-11-03 04:04:00,emma.davis,192.168.1.130,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,7,BENIGN,0
+2026-11-08 00:29:00,frank.miller,114.119.184.169,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,1,1,58,IMPOSSIBLE_TRAVEL,1
+2026-11-05 18:36:00,grace.wilson,203.0.113.87,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,7,18,1,1,89,BRUTE_FORCE,1
+2026-11-03 16:35:00,emma.davis,192.168.1.32,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,5,BENIGN,0
+2026-11-08 05:25:00,admin_corp,192.168.1.116,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,1,BENIGN,0
+2026-11-01 12:58:00,frank.miller,198.51.100.23,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,12,1,1,85,SPRAY_ATTACK,1
+2026-11-03 07:43:00,it_support,192.168.1.26,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,7,BENIGN,0
+2026-11-02 16:58:00,it_support,192.168.1.76,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,8,BENIGN,0
+2026-11-03 01:17:00,it_support,192.168.1.36,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,3,BENIGN,0
+2026-11-02 12:55:00,devops_lead,192.168.1.229,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,3,BENIGN,0
+2026-11-03 05:37:00,bob.jones,198.51.100.24,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,5,1,1,89,SPRAY_ATTACK,1
+2026-11-06 08:34:00,it_support,192.168.1.232,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,10,BENIGN,0
+2026-11-02 21:38:00,bob.jones,203.0.113.57,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,8,21,1,1,95,BRUTE_FORCE,1
+2026-11-06 17:21:00,frank.miller,192.168.1.53,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,17,0,0,13,BENIGN,0
+2026-11-05 10:29:00,david.brown,192.168.1.202,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,13,BENIGN,0
+2026-11-06 00:54:00,grace.wilson,198.51.100.34,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,0,1,1,91,SPRAY_ATTACK,1
+2026-11-01 16:08:00,admin_corp,192.168.1.12,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,12,BENIGN,0
+2026-11-03 04:53:00,grace.wilson,192.168.1.204,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,4,0,0,4,BENIGN,0
+2026-11-07 20:54:00,alice.smith,10.200.46.43,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,32,OFF_HOURS,1
+2026-11-07 15:11:00,emma.davis,192.168.1.90,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,15,0,0,4,BENIGN,0
+2026-11-05 22:19:00,admin_corp,192.168.1.237,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,22,0,0,12,BENIGN,0
+2026-11-03 13:53:00,emma.davis,192.168.1.147,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,4,BENIGN,0
+2026-11-07 06:08:00,it_support,192.168.1.33,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,5,BENIGN,0
+2026-11-01 14:24:00,alice.smith,198.51.100.35,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,14,1,1,88,SPRAY_ATTACK,1
+2026-11-04 01:55:00,emma.davis,192.168.1.139,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,11,BENIGN,0
+2026-11-04 06:56:00,it_support,192.168.1.22,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,6,0,0,0,BENIGN,0
+2026-11-06 11:45:00,frank.miller,10.200.48.38,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,29,OFF_HOURS,1
+2026-11-04 13:42:00,devops_lead,192.168.1.192,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,3,BENIGN,0
+2026-11-05 01:32:00,it_support,192.168.1.220,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,13,BENIGN,0
+2026-11-06 00:32:00,bob.jones,192.168.1.118,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,2,BENIGN,0
+2026-11-05 12:51:00,it_support,192.168.1.153,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,13,BENIGN,0
+2026-11-06 08:11:00,admin_corp,192.168.1.116,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,15,BENIGN,0
+2026-11-06 13:00:00,carol.white,10.200.33.34,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,35,OFF_HOURS,1
+2026-11-01 16:55:00,carol.white,114.119.95.31,LOGIN_SUCCESS,"Tokyo, JP",curl/7.88.1,0,16,1,1,47,IMPOSSIBLE_TRAVEL,1
+2026-11-02 17:01:00,frank.miller,192.168.1.20,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,17,0,0,11,BENIGN,0
+2026-11-04 18:49:00,emma.davis,192.168.1.212,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,0,0,13,BENIGN,0
+2026-11-01 21:18:00,emma.davis,198.51.100.14,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,21,1,1,95,SPRAY_ATTACK,1
+2026-11-01 08:35:00,bob.jones,192.168.1.27,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,9,BENIGN,0
+2026-11-07 18:30:00,admin_corp,198.51.100.25,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,18,1,1,99,SPRAY_ATTACK,1
+2026-11-02 20:16:00,carol.white,192.168.1.127,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,10,BENIGN,0
+2026-11-02 08:24:00,devops_lead,192.168.1.114,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,8,0,0,10,BENIGN,0
+2026-11-07 11:44:00,alice.smith,114.119.114.189,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,1,1,50,IMPOSSIBLE_TRAVEL,1
+2026-11-01 14:47:00,devops_lead,192.168.1.207,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,2,BENIGN,0
+2026-11-03 12:33:00,devops_lead,192.168.1.203,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,15,BENIGN,0
+2026-11-07 01:16:00,alice.smith,192.168.1.249,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,6,BENIGN,0
+2026-11-04 02:59:00,devops_lead,192.168.1.216,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,15,BENIGN,0
+2026-11-01 14:22:00,frank.miller,192.168.1.116,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,8,BENIGN,0
+2026-11-02 08:52:00,bob.jones,10.200.35.11,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,0,0,28,OFF_HOURS,1
+2026-11-02 08:29:00,carol.white,192.168.1.114,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,10,BENIGN,0
+2026-11-03 09:34:00,alice.smith,192.168.1.86,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,9,0,0,13,BENIGN,0
+2026-11-05 00:32:00,emma.davis,192.168.1.221,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,7,BENIGN,0
+2026-11-06 22:37:00,it_support,203.0.113.50,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,5,22,1,1,80,BRUTE_FORCE,1
+2026-11-06 14:56:00,it_support,192.168.1.133,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,14,0,0,0,BENIGN,0
+2026-11-04 09:30:00,it_support,10.200.44.7,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,38,OFF_HOURS,1
+2026-11-05 23:05:00,admin_corp,192.168.1.172,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,5,BENIGN,0
+2026-11-04 02:57:00,it_support,114.119.143.116,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,2,1,1,69,IMPOSSIBLE_TRAVEL,1
+2026-11-04 15:00:00,carol.white,192.168.1.248,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,12,BENIGN,0
+2026-11-05 07:58:00,david.brown,192.168.1.140,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,2,BENIGN,0
+2026-11-04 18:06:00,bob.jones,192.168.1.41,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,18,0,0,8,BENIGN,0
+2026-11-06 05:58:00,david.brown,192.168.1.215,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),1,5,0,0,8,BENIGN,0
+2026-11-06 11:38:00,emma.davis,192.168.1.92,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,10,BENIGN,0
+2026-11-01 12:21:00,carol.white,192.168.1.10,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,12,0,0,5,BENIGN,0
+2026-11-06 00:50:00,it_support,198.51.100.46,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,0,1,1,92,SPRAY_ATTACK,1
+2026-11-07 10:57:00,bob.jones,203.0.113.84,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,12,10,1,1,91,BRUTE_FORCE,1
+2026-11-02 17:43:00,frank.miller,10.200.25.39,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,44,OFF_HOURS,1
+2026-11-01 10:19:00,bob.jones,192.168.1.249,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,0,BENIGN,0
+2026-11-04 12:47:00,frank.miller,192.168.1.218,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,15,BENIGN,0
+2026-11-05 11:08:00,alice.smith,192.168.1.241,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,12,BENIGN,0
+2026-11-02 14:18:00,emma.davis,192.168.1.136,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,5,BENIGN,0
+2026-11-02 01:51:00,devops_lead,192.168.1.26,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,1,0,0,7,BENIGN,0
+2026-11-07 06:51:00,emma.davis,192.168.1.183,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,8,BENIGN,0
+2026-11-07 16:57:00,admin_corp,192.168.1.119,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,13,BENIGN,0
+2026-11-04 10:50:00,bob.jones,192.168.1.129,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,1,BENIGN,0
+2026-11-03 21:19:00,alice.smith,192.168.1.117,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,6,BENIGN,0
+2026-11-05 03:24:00,bob.jones,198.51.100.2,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,3,3,1,1,87,SPRAY_ATTACK,1
+2026-11-06 03:44:00,bob.jones,114.119.51.43,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,1,1,44,IMPOSSIBLE_TRAVEL,1
+2026-11-02 10:25:00,alice.smith,192.168.1.216,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,10,0,0,10,BENIGN,0
+2026-11-04 04:23:00,david.brown,192.168.1.71,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,7,BENIGN,0
+2026-11-02 03:55:00,devops_lead,192.168.1.205,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,3,BENIGN,0
+2026-11-02 07:22:00,alice.smith,114.119.97.81,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,1,1,48,IMPOSSIBLE_TRAVEL,1
+2026-11-02 00:56:00,admin_corp,192.168.1.166,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,1,BENIGN,0
+2026-11-07 16:43:00,alice.smith,192.168.1.107,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,16,0,0,13,BENIGN,0
+2026-11-03 23:40:00,devops_lead,203.0.113.80,LOGIN_FAILED,"Toronto, CA",Python-urllib/3.12,11,23,1,1,84,BRUTE_FORCE,1
+2026-11-06 04:55:00,devops_lead,192.168.1.96,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,4,0,0,6,BENIGN,0
+2026-11-02 13:30:00,bob.jones,192.168.1.192,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,0,0,6,BENIGN,0
+2026-11-07 20:32:00,carol.white,192.168.1.75,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,20,0,0,14,BENIGN,0
+2026-11-03 10:47:00,david.brown,192.168.1.21,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,13,BENIGN,0
+2026-11-07 04:08:00,frank.miller,192.168.1.236,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,4,0,0,10,BENIGN,0
+2026-11-04 15:29:00,frank.miller,10.200.34.38,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,27,OFF_HOURS,1
+2026-11-07 02:29:00,it_support,198.51.100.28,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,2,1,1,86,SPRAY_ATTACK,1
+2026-11-03 14:43:00,david.brown,203.0.113.44,LOGIN_FAILED,"Sydney, AU",Python-urllib/3.12,12,14,1,1,89,BRUTE_FORCE,1
+2026-11-05 02:26:00,devops_lead,192.168.1.95,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,3,BENIGN,0
+2026-11-06 12:04:00,alice.smith,192.168.1.245,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,12,0,0,7,BENIGN,0
+2026-11-06 15:24:00,devops_lead,192.168.1.133,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,15,0,0,12,BENIGN,0
+2026-11-03 10:19:00,alice.smith,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,10,0,0,4,BENIGN,0
+2026-11-04 15:21:00,admin_corp,192.168.1.159,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,15,0,0,6,BENIGN,0
+2026-11-03 14:02:00,emma.davis,192.168.1.236,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,14,0,0,7,BENIGN,0
+2026-11-03 08:46:00,david.brown,192.168.1.225,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,4,BENIGN,0
+2026-11-05 15:29:00,bob.jones,192.168.1.63,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,11,BENIGN,0
+2026-11-03 06:48:00,it_support,10.200.40.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,24,OFF_HOURS,1
+2026-11-02 19:43:00,david.brown,192.168.1.106,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,0,0,7,BENIGN,0
+2026-11-01 20:37:00,devops_lead,192.168.1.228,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,1,BENIGN,0
+2026-11-04 12:29:00,carol.white,198.51.100.38,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,12,1,1,86,SPRAY_ATTACK,1
+2026-11-02 06:14:00,admin_corp,203.0.113.79,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,13,6,1,1,82,BRUTE_FORCE,1
+2026-11-07 03:03:00,frank.miller,192.168.1.128,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,15,BENIGN,0
+2026-11-06 23:07:00,admin_corp,192.168.1.112,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,23,0,0,6,BENIGN,0
+2026-11-06 11:27:00,david.brown,192.168.1.88,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,11,0,0,11,BENIGN,0
+2026-11-04 05:31:00,it_support,192.168.1.202,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,5,0,0,11,BENIGN,0
+2026-11-03 22:52:00,devops_lead,192.168.1.141,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,13,BENIGN,0
+2026-11-05 23:41:00,frank.miller,203.0.113.41,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,5,23,1,1,75,BRUTE_FORCE,1
+2026-11-06 08:37:00,david.brown,192.168.1.29,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,8,0,0,2,BENIGN,0
+2026-11-04 11:29:00,david.brown,192.168.1.28,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,10,BENIGN,0
+2026-11-03 13:42:00,frank.miller,192.168.1.200,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,13,0,0,4,BENIGN,0
+2026-11-07 12:19:00,emma.davis,192.168.1.86,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,12,0,0,12,BENIGN,0
+2026-11-05 22:48:00,devops_lead,203.0.113.2,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,11,22,1,1,77,BRUTE_FORCE,1
+2026-11-03 21:58:00,david.brown,192.168.1.142,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,21,0,0,10,BENIGN,0
+2026-11-02 07:27:00,frank.miller,203.0.113.55,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,12,7,1,1,84,BRUTE_FORCE,1
+2026-11-07 16:30:00,alice.smith,192.168.1.157,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,16,0,0,0,BENIGN,0
+2026-11-07 00:29:00,frank.miller,192.168.1.117,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,0,0,0,9,BENIGN,0
+2026-11-05 01:03:00,devops_lead,192.168.1.211,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,10,BENIGN,0
+2026-11-07 19:10:00,devops_lead,114.119.147.101,LOGIN_SUCCESS,"Singapore, SG",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,19,1,1,65,IMPOSSIBLE_TRAVEL,1
+2026-11-02 01:24:00,it_support,192.168.1.131,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,14,BENIGN,0
+2026-11-04 19:12:00,bob.jones,192.168.1.182,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,19,0,0,15,BENIGN,0
+2026-11-01 15:20:00,carol.white,192.168.1.243,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,9,BENIGN,0
+2026-11-07 07:12:00,bob.jones,192.168.1.104,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,7,0,0,13,BENIGN,0
+2026-11-05 18:48:00,carol.white,10.200.9.35,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,0,0,32,OFF_HOURS,1
+2026-11-03 16:23:00,carol.white,198.51.100.20,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,16,1,1,95,SPRAY_ATTACK,1
+2026-11-03 03:22:00,devops_lead,192.168.1.89,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,3,0,0,14,BENIGN,0
+2026-11-04 11:13:00,david.brown,192.168.1.46,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,0,0,7,BENIGN,0
+2026-11-07 07:36:00,frank.miller,114.119.126.118,LOGIN_SUCCESS,"Singapore, SG",Python-urllib/3.12,0,7,1,1,42,IMPOSSIBLE_TRAVEL,1
+2026-11-02 08:53:00,emma.davis,192.168.1.245,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,8,0,0,9,BENIGN,0
+2026-11-05 18:48:00,devops_lead,203.0.113.23,LOGIN_FAILED,"Tokyo, JP",curl/7.88.1,7,18,1,1,89,BRUTE_FORCE,1
+2026-11-06 06:00:00,admin_corp,192.168.1.178,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,12,BENIGN,0
+2026-11-01 19:56:00,david.brown,198.51.100.11,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,19,1,1,97,SPRAY_ATTACK,1
+2026-11-04 15:43:00,bob.jones,192.168.1.194,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,3,BENIGN,0
+2026-11-05 12:42:00,bob.jones,203.0.113.65,LOGIN_FAILED,"Singapore, SG",Python-urllib/3.12,12,12,1,1,75,BRUTE_FORCE,1
+2026-11-04 05:02:00,david.brown,192.168.1.128,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,5,0,0,14,BENIGN,0
+2026-11-05 16:05:00,frank.miller,192.168.1.229,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,16,0,0,8,BENIGN,0
+2026-11-02 15:19:00,carol.white,192.168.1.201,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,15,0,0,2,BENIGN,0
+2026-11-07 13:46:00,david.brown,192.168.1.122,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,13,0,0,5,BENIGN,0
+2026-11-03 06:35:00,alice.smith,192.168.1.55,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,12,BENIGN,0
+2026-11-03 06:00:00,bob.jones,192.168.1.12,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,5,BENIGN,0
+2026-11-03 19:10:00,alice.smith,198.51.100.35,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,1,19,1,1,94,SPRAY_ATTACK,1
+2026-11-01 21:03:00,it_support,192.168.1.193,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,14,BENIGN,0
+2026-11-01 22:19:00,devops_lead,192.168.1.207,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),1,22,0,0,11,BENIGN,0
+2026-11-04 01:09:00,david.brown,192.168.1.117,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,6,BENIGN,0
+2026-11-02 01:16:00,david.brown,114.119.25.171,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,1,1,1,42,IMPOSSIBLE_TRAVEL,1
+2026-11-06 01:31:00,it_support,192.168.1.93,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,1,0,0,6,BENIGN,0
+2026-11-07 11:56:00,grace.wilson,114.119.31.60,LOGIN_SUCCESS,"Sydney, AU",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,11,1,1,62,IMPOSSIBLE_TRAVEL,1
+2026-11-05 00:19:00,carol.white,192.168.1.177,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,0,0,0,14,BENIGN,0
+2026-11-03 20:07:00,bob.jones,192.168.1.81,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,20,0,0,6,BENIGN,0
+2026-11-06 00:16:00,emma.davis,203.0.113.64,LOGIN_FAILED,"Toronto, CA",curl/7.88.1,9,0,1,1,73,BRUTE_FORCE,1
+2026-11-08 03:49:00,frank.miller,10.200.45.25,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,25,OFF_HOURS,1
+2026-11-04 22:50:00,admin_corp,192.168.1.14,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,22,0,0,7,BENIGN,0
+2026-11-07 01:29:00,devops_lead,192.168.1.13,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,1,0,0,3,BENIGN,0
+2026-11-04 20:21:00,david.brown,192.168.1.203,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,20,0,0,4,BENIGN,0
+2026-11-05 14:17:00,admin_corp,192.168.1.48,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,7,BENIGN,0
+2026-11-08 03:19:00,admin_corp,192.168.1.94,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,1,BENIGN,0
+2026-11-07 06:14:00,grace.wilson,192.168.1.83,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,6,0,0,10,BENIGN,0
+2026-11-05 05:36:00,david.brown,192.168.1.23,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,5,0,0,7,BENIGN,0
+2026-11-08 06:03:00,grace.wilson,192.168.1.56,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,6,0,0,15,BENIGN,0
+2026-11-02 03:07:00,david.brown,192.168.1.46,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,3,0,0,6,BENIGN,0
+2026-11-04 00:32:00,it_support,192.168.1.195,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,0,0,0,6,BENIGN,0
+2026-11-04 02:53:00,grace.wilson,192.168.1.73,LOGIN_SUCCESS,"San Francisco, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,2,0,0,6,BENIGN,0
+2026-11-04 10:15:00,admin_corp,192.168.1.102,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,10,0,0,14,BENIGN,0
+2026-11-06 03:26:00,it_support,192.168.1.120,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,3,0,0,12,BENIGN,0
+2026-11-06 04:43:00,bob.jones,203.0.113.39,LOGIN_FAILED,"Sydney, AU",curl/7.88.1,9,4,1,1,82,BRUTE_FORCE,1
+2026-11-06 14:37:00,emma.davis,192.168.1.106,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,14,0,0,15,BENIGN,0
+2026-11-03 13:27:00,carol.white,114.119.2.4,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,1,1,71,IMPOSSIBLE_TRAVEL,1
+2026-11-05 22:29:00,grace.wilson,114.119.191.96,LOGIN_SUCCESS,"Singapore, SG",curl/7.88.1,0,22,1,1,59,IMPOSSIBLE_TRAVEL,1
+2026-11-08 00:39:00,bob.jones,192.168.1.19,LOGIN_SUCCESS,"New York, US",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),1,0,0,0,5,BENIGN,0
+2026-11-03 13:03:00,grace.wilson,114.119.198.193,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (iPhone; CPU iPhone OS 16_5),0,13,1,1,72,IMPOSSIBLE_TRAVEL,1
+2026-11-06 21:26:00,frank.miller,192.168.1.176,LOGIN_SUCCESS,"Berlin, DE",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,21,0,0,7,BENIGN,0
+2026-11-06 18:28:00,alice.smith,114.119.93.162,LOGIN_SUCCESS,"Tokyo, JP",Mozilla/5.0 (Windows NT 10.0; Win64; x64),0,18,1,1,49,IMPOSSIBLE_TRAVEL,1
+2026-11-04 07:22:00,devops_lead,192.168.1.184,LOGIN_SUCCESS,"London, UK",Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7),0,7,0,0,5,BENIGN,0
+2026-11-01 11:23:00,bob.jones,203.0.113.83,LOGIN_FAILED,"Tokyo, JP",Python-urllib/3.12,14,11,1,1,72,BRUTE_FORCE,1
+2026-11-07 05:36:00,david.brown,198.51.100.11,LOGIN_FAILED,Unknown,Hydra-Sprayer/2.1,2,5,1,1,88,SPRAY_ATTACK,1

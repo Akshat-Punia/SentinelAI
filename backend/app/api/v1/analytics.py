@@ -95,3 +95,4 @@ def download_executive_pdf_report(
         media_type="application/pdf",
         headers={"Content-Disposition": f"attachment; filename={filename}"}
     )
+

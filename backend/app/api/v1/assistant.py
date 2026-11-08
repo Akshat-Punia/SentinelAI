@@ -57,3 +57,4 @@ def analyze_specific_alert(
         event = db.query(SecurityEvent).filter(SecurityEvent.id == alert.event_id).first()
 
     return GenAIAssistantService.analyze_alert(alert=alert, event=event)
+

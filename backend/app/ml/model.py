@@ -99,3 +99,4 @@ class MLRiskEngine:
             "contributing_factors": contributing_factors,
             "model_version": cls.MODEL_VERSION
         }
+

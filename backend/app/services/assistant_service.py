@@ -228,3 +228,4 @@ class GenAIAssistantService:
             "recommended_actions": actions,
             "model_provider": provider
         }
+

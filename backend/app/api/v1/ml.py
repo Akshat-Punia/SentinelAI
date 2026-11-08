@@ -48,3 +48,4 @@ def get_model_information(current_user: User = Depends(get_current_user)):
             "LOW": "< 35.0"
         }
     }
+

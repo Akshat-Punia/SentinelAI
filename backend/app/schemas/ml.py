@@ -18,3 +18,4 @@ class RiskPredictionResponse(BaseModel):
     prediction: str = Field(..., description="Classification: Benign, Suspicious, Malicious")
     contributing_factors: List[str]
     model_version: str = "v1.2-hybrid-ml"
+

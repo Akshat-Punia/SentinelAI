@@ -42,3 +42,4 @@ export interface AnalyticsOverview {
   resolution_rate_percent: number;
   average_alert_risk_score: number;
 }
+
